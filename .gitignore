@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+*.log
+paper/*.aux
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/latex_build_*/
+results/last_human_match.json
+results/last_human_miss_audit.json
+checkpoints/sem_after_human.json.gz
