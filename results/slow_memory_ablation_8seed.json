@@ -1,0 +1,1990 @@
+{
+  "status": "SEM_SLOW_MEMORY_ABLATION_COMPLETE_BATCHED",
+  "protocol": {
+    "paired_seeds": true,
+    "seeds": 8,
+    "episodes_per_phase": 80,
+    "full": "fast+slow",
+    "fast_only": "slow estimates ignored",
+    "batches": 4
+  },
+  "aggregate": {
+    "full": {
+      "A1": {
+        "mean_first20_target_intent_fraction": 0.6875,
+        "mean_last20_target_intent_fraction": 0.95,
+        "mean_intended_target_fraction": 0.8421875,
+        "mean_reward": 0.5077889426878117,
+        "adapted_runs": 8,
+        "mean_adaptation_latency_episodes": 19.625,
+        "median_adaptation_latency_episodes": 16.0,
+        "latencies": [
+          42,
+          16,
+          16,
+          19,
+          16,
+          16,
+          16,
+          16
+        ]
+      },
+      "B": {
+        "mean_first20_target_intent_fraction": 0.15,
+        "mean_last20_target_intent_fraction": 0.9125,
+        "mean_intended_target_fraction": 0.6734375,
+        "mean_reward": 0.46444280512878294,
+        "adapted_runs": 8,
+        "mean_adaptation_latency_episodes": 31.75,
+        "median_adaptation_latency_episodes": 34.5,
+        "latencies": [
+          25,
+          34,
+          36,
+          35,
+          37,
+          21,
+          39,
+          27
+        ]
+      },
+      "A2": {
+        "mean_first20_target_intent_fraction": 0.43125,
+        "mean_last20_target_intent_fraction": 0.90625,
+        "mean_intended_target_fraction": 0.7796875,
+        "mean_reward": 0.49556092729676043,
+        "adapted_runs": 8,
+        "mean_adaptation_latency_episodes": 22.875,
+        "median_adaptation_latency_episodes": 21.5,
+        "latencies": [
+          24,
+          34,
+          19,
+          18,
+          26,
+          19,
+          19,
+          24
+        ]
+      }
+    },
+    "fast_only": {
+      "A1": {
+        "mean_first20_target_intent_fraction": 0.75,
+        "mean_last20_target_intent_fraction": 0.90625,
+        "mean_intended_target_fraction": 0.859375,
+        "mean_reward": 0.5021359689328473,
+        "adapted_runs": 8,
+        "mean_adaptation_latency_episodes": 16.375,
+        "median_adaptation_latency_episodes": 16.0,
+        "latencies": [
+          16,
+          16,
+          16,
+          19,
+          16,
+          16,
+          16,
+          16
+        ]
+      },
+      "B": {
+        "mean_first20_target_intent_fraction": 0.4125,
+        "mean_last20_target_intent_fraction": 0.96875,
+        "mean_intended_target_fraction": 0.79375,
+        "mean_reward": 0.5049320073399823,
+        "adapted_runs": 8,
+        "mean_adaptation_latency_episodes": 25.25,
+        "median_adaptation_latency_episodes": 20.5,
+        "latencies": [
+          34,
+          20,
+          21,
+          20,
+          18,
+          16,
+          30,
+          43
+        ]
+      },
+      "A2": {
+        "mean_first20_target_intent_fraction": 0.425,
+        "mean_last20_target_intent_fraction": 0.8875,
+        "mean_intended_target_fraction": 0.75,
+        "mean_reward": 0.5060715679311427,
+        "adapted_runs": 8,
+        "mean_adaptation_latency_episodes": 26.5,
+        "median_adaptation_latency_episodes": 21.5,
+        "latencies": [
+          55,
+          27,
+          38,
+          24,
+          16,
+          19,
+          16,
+          17
+        ]
+      }
+    }
+  },
+  "paired": {
+    "A1": {
+      "mean_latency_penalty_fast_only_minus_full": -3.25,
+      "median_latency_penalty_fast_only_minus_full": 0.0,
+      "mean_last20_advantage_full_minus_fast_only": 0.04375000000000001,
+      "paired_adapted": 8,
+      "full_faster_count": 0,
+      "fast_only_faster_count": 1,
+      "tie_count": 7
+    },
+    "B": {
+      "mean_latency_penalty_fast_only_minus_full": -6.5,
+      "median_latency_penalty_fast_only_minus_full": -11.5,
+      "mean_last20_advantage_full_minus_fast_only": -0.05624999999999998,
+      "paired_adapted": 8,
+      "full_faster_count": 2,
+      "fast_only_faster_count": 6,
+      "tie_count": 0
+    },
+    "A2": {
+      "mean_latency_penalty_fast_only_minus_full": 3.625,
+      "median_latency_penalty_fast_only_minus_full": -1.5,
+      "mean_last20_advantage_full_minus_fast_only": 0.018750000000000003,
+      "paired_adapted": 8,
+      "full_faster_count": 3,
+      "fast_only_faster_count": 4,
+      "tie_count": 1
+    }
+  },
+  "runs": {
+    "full": [
+      {
+        "seed": 20260913,
+        "mode": "full",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.6375,
+            "actual_target_fraction": 0.6,
+            "opponent_miss_rate": 0.3625,
+            "mean_reward": 0.5471378200166271,
+            "target_actual_opponent_miss_rate": 0.5,
+            "other_actual_opponent_miss_rate": 0.15625,
+            "target_intent_opponent_miss_rate": 0.47058823529411764,
+            "other_intent_opponent_miss_rate": 0.1724137931034483,
+            "first20_target_intent_fraction": 0.2,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 42,
+            "end_fast_values": {
+              "-0.66": 0.9246595900711658,
+              "-0.44": 0.5939229294956797,
+              "-0.22": 0.37050753571365574,
+              "0.0": 0.21927043376801827,
+              "0.22": 0.21447680306314526,
+              "0.44": 0.2306448584723225,
+              "0.66": 0.4385857939747244
+            },
+            "end_slow_values": {
+              "-0.66": 0.8433840528193249,
+              "-0.44": 0.4371094079808856,
+              "-0.22": 0.3597662197624843,
+              "0.0": 0.2535709226745956,
+              "0.22": 0.20936467144368337,
+              "0.44": 0.3628885362826185,
+              "0.66": 0.6730803604899436
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.7375,
+            "actual_target_fraction": 0.5125,
+            "opponent_miss_rate": 0.25,
+            "mean_reward": 0.4382503674052775,
+            "target_actual_opponent_miss_rate": 0.4146341463414634,
+            "other_actual_opponent_miss_rate": 0.07692307692307693,
+            "target_intent_opponent_miss_rate": 0.2542372881355932,
+            "other_intent_opponent_miss_rate": 0.23809523809523808,
+            "first20_target_intent_fraction": 0.3,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 25,
+            "end_fast_values": {
+              "-0.66": 0.29009446589050647,
+              "-0.44": 0.22327849550427198,
+              "-0.22": 0.2744416456480445,
+              "0.0": 0.17902236846524255,
+              "0.22": 0.23538817305304308,
+              "0.44": 0.7609362743294772,
+              "0.66": 0.6962518933914332
+            },
+            "end_slow_values": {
+              "-0.66": 0.569837083223796,
+              "-0.44": 0.37806248290556926,
+              "-0.22": 0.33358490536577967,
+              "0.0": 0.22769991215165955,
+              "0.22": 0.22293193567641853,
+              "0.44": 0.5293939219151373,
+              "0.66": 0.6478306694774906
+            },
+            "end_preferred_action": 0.44
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.775,
+            "actual_target_fraction": 0.65,
+            "opponent_miss_rate": 0.2375,
+            "mean_reward": 0.44529782324413336,
+            "target_actual_opponent_miss_rate": 0.36538461538461536,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.25806451612903225,
+            "other_intent_opponent_miss_rate": 0.16666666666666666,
+            "first20_target_intent_fraction": 0.35,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 24,
+            "end_fast_values": {
+              "-0.66": 0.5919854450855586,
+              "-0.44": 0.3842628093639642,
+              "-0.22": 0.3640049245477327,
+              "0.0": 0.2633199945310048,
+              "0.22": 0.1881484507376019,
+              "0.44": 0.22345063714424845,
+              "0.66": 0.3519359543844709
+            },
+            "end_slow_values": {
+              "-0.66": 0.6504545623551882,
+              "-0.44": 0.4184377276399184,
+              "-0.22": 0.3575656566017844,
+              "0.0": 0.23499023784401357,
+              "0.22": 0.2173744905051376,
+              "0.44": 0.43094860464872103,
+              "0.66": 0.5451882598100544
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20261922,
+        "mode": "full",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8625,
+            "actual_target_fraction": 0.6625,
+            "opponent_miss_rate": 0.3125,
+            "mean_reward": 0.5072847556821115,
+            "target_actual_opponent_miss_rate": 0.4528301886792453,
+            "other_actual_opponent_miss_rate": 0.037037037037037035,
+            "target_intent_opponent_miss_rate": 0.36231884057971014,
+            "other_intent_opponent_miss_rate": 0.0,
+            "first20_target_intent_fraction": 0.9,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.798327214706484,
+              "-0.44": 0.6934759934859962,
+              "-0.22": 0.21604694689634202,
+              "0.0": 0.2610766094155298,
+              "0.22": 0.21916610317782292,
+              "0.44": 0.2772992164387555,
+              "0.66": 0.5351146124874262
+            },
+            "end_slow_values": {
+              "-0.66": 0.7631359109095645,
+              "-0.44": 0.525917378912085,
+              "-0.22": 0.23885750086566135,
+              "0.0": 0.29558185658595404,
+              "0.22": 0.19900121624333839,
+              "0.44": 0.23559111645676745,
+              "0.66": 0.3837095489867711
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.6625,
+            "actual_target_fraction": 0.55,
+            "opponent_miss_rate": 0.225,
+            "mean_reward": 0.4373346257173902,
+            "target_actual_opponent_miss_rate": 0.36363636363636365,
+            "other_actual_opponent_miss_rate": 0.05555555555555555,
+            "target_intent_opponent_miss_rate": 0.2830188679245283,
+            "other_intent_opponent_miss_rate": 0.1111111111111111,
+            "first20_target_intent_fraction": 0.0,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 34,
+            "end_fast_values": {
+              "-0.66": 0.3557778387852246,
+              "-0.44": 0.30007889585519576,
+              "-0.22": 0.2516507652796224,
+              "0.0": 0.23559210473233116,
+              "0.22": 0.5274764962360536,
+              "0.44": 0.6238195817393473,
+              "0.66": 0.8511928159318909
+            },
+            "end_slow_values": {
+              "-0.66": 0.5231954680457324,
+              "-0.44": 0.46098718800079447,
+              "-0.22": 0.2576634229600879,
+              "0.0": 0.2574550732174016,
+              "0.22": 0.3374787851227514,
+              "0.44": 0.360560308777161,
+              "0.66": 0.5933096717697512
+            },
+            "end_preferred_action": 0.66
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.7,
+            "actual_target_fraction": 0.5125,
+            "opponent_miss_rate": 0.25,
+            "mean_reward": 0.47144278076507845,
+            "target_actual_opponent_miss_rate": 0.3902439024390244,
+            "other_actual_opponent_miss_rate": 0.10256410256410256,
+            "target_intent_opponent_miss_rate": 0.26785714285714285,
+            "other_intent_opponent_miss_rate": 0.20833333333333334,
+            "first20_target_intent_fraction": 0.15,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 34,
+            "end_fast_values": {
+              "-0.66": 0.5520760259496237,
+              "-0.44": 0.48844216672927493,
+              "-0.22": 0.2967465257664443,
+              "0.0": 0.2957296549873752,
+              "0.22": 0.21124554775872506,
+              "0.44": 0.3663915966798232,
+              "0.66": 0.24076640363487747
+            },
+            "end_slow_values": {
+              "-0.66": 0.606425020156444,
+              "-0.44": 0.5000317593236201,
+              "-0.22": 0.26928051078719195,
+              "0.0": 0.2630298215750387,
+              "0.22": 0.31410031403659544,
+              "0.44": 0.3473694776076438,
+              "0.66": 0.45958887069210824
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20262931,
+        "mode": "full",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.85,
+            "actual_target_fraction": 0.7125,
+            "opponent_miss_rate": 0.375,
+            "mean_reward": 0.5485669262889523,
+            "target_actual_opponent_miss_rate": 0.5263157894736842,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.39705882352941174,
+            "other_intent_opponent_miss_rate": 0.25,
+            "first20_target_intent_fraction": 0.75,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.7752666993178521,
+              "-0.44": 0.7339485676027012,
+              "-0.22": 0.7110940422036875,
+              "0.0": 0.2165865575660887,
+              "0.22": 0.27185801110649704,
+              "0.44": 0.20788642153302228,
+              "0.66": 0.28987328118080835
+            },
+            "end_slow_values": {
+              "-0.66": 0.7671256665745232,
+              "-0.44": 0.39234186222945194,
+              "-0.22": 0.28654297528368017,
+              "0.0": 0.1643957171086176,
+              "0.22": 0.2076467014384045,
+              "0.44": 0.1736854112210343,
+              "0.66": 0.3187378564413085
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.6,
+            "actual_target_fraction": 0.475,
+            "opponent_miss_rate": 0.2,
+            "mean_reward": 0.4237210631649375,
+            "target_actual_opponent_miss_rate": 0.2894736842105263,
+            "other_actual_opponent_miss_rate": 0.11904761904761904,
+            "target_intent_opponent_miss_rate": 0.25,
+            "other_intent_opponent_miss_rate": 0.125,
+            "first20_target_intent_fraction": 0.05,
+            "last20_target_intent_fraction": 0.8,
+            "adaptation_latency_episodes": 36,
+            "end_fast_values": {
+              "-0.66": 0.6167312604988386,
+              "-0.44": 0.24725188757643146,
+              "-0.22": 0.24840573460143772,
+              "0.0": 0.20736615835047112,
+              "0.22": 0.3108994609028046,
+              "0.44": 0.4734878879348504,
+              "0.66": 0.690784786781758
+            },
+            "end_slow_values": {
+              "-0.66": 0.5481617585645467,
+              "-0.44": 0.34482693254575686,
+              "-0.22": 0.27035635557016835,
+              "0.0": 0.17809834247783157,
+              "0.22": 0.25030151262829464,
+              "0.44": 0.35726586604717037,
+              "0.66": 0.49340654471243284
+            },
+            "end_preferred_action": 0.66
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8,
+            "actual_target_fraction": 0.6625,
+            "opponent_miss_rate": 0.325,
+            "mean_reward": 0.5254705874430525,
+            "target_actual_opponent_miss_rate": 0.4528301886792453,
+            "other_actual_opponent_miss_rate": 0.07407407407407407,
+            "target_intent_opponent_miss_rate": 0.359375,
+            "other_intent_opponent_miss_rate": 0.1875,
+            "first20_target_intent_fraction": 0.55,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 19,
+            "end_fast_values": {
+              "-0.66": 0.6278908227348408,
+              "-0.44": 0.3931917999138593,
+              "-0.22": 0.591699932041146,
+              "0.0": 0.21260302944085202,
+              "0.22": 0.256854249267687,
+              "0.44": 0.2764216761527096,
+              "0.66": 0.5194786427005359
+            },
+            "end_slow_values": {
+              "-0.66": 0.6769921146767872,
+              "-0.44": 0.43875154917060144,
+              "-0.22": 0.37920212040204765,
+              "0.0": 0.19003291781227688,
+              "0.22": 0.25768551530570066,
+              "0.44": 0.32421347392781447,
+              "0.66": 0.498753620378152
+            },
+            "end_preferred_action": 0.66
+          }
+        ]
+      },
+      {
+        "seed": 20263940,
+        "mode": "full",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8375,
+            "actual_target_fraction": 0.625,
+            "opponent_miss_rate": 0.2875,
+            "mean_reward": 0.4716241619831166,
+            "target_actual_opponent_miss_rate": 0.46,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.34328358208955223,
+            "other_intent_opponent_miss_rate": 0.0,
+            "first20_target_intent_fraction": 0.6,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 19,
+            "end_fast_values": {
+              "-0.66": 0.8339883794149553,
+              "-0.44": 0.6303105062752345,
+              "-0.22": 0.27362941451930034,
+              "0.0": 0.2595877224278532,
+              "0.22": 0.22588881747505665,
+              "0.44": 0.25610395751370607,
+              "0.66": 0.23051845492860126
+            },
+            "end_slow_values": {
+              "-0.66": 0.6270759622231329,
+              "-0.44": 0.811614596318761,
+              "-0.22": 0.3644821345686053,
+              "0.0": 0.2905011610082285,
+              "0.22": 0.2640846979712018,
+              "0.44": 0.18582330949942655,
+              "0.66": 0.27287595427884975
+            },
+            "end_preferred_action": -0.44
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.6625,
+            "actual_target_fraction": 0.5625,
+            "opponent_miss_rate": 0.3,
+            "mean_reward": 0.4881844908122097,
+            "target_actual_opponent_miss_rate": 0.4666666666666667,
+            "other_actual_opponent_miss_rate": 0.08571428571428572,
+            "target_intent_opponent_miss_rate": 0.33962264150943394,
+            "other_intent_opponent_miss_rate": 0.2222222222222222,
+            "first20_target_intent_fraction": 0.0,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 35,
+            "end_fast_values": {
+              "-0.66": 0.5799434907150564,
+              "-0.44": 0.30442386911652397,
+              "-0.22": 0.2743454430349699,
+              "0.0": 0.2670090861937476,
+              "0.22": 0.18231239405998917,
+              "0.44": 0.4667013773960379,
+              "0.66": 0.5479986513044128
+            },
+            "end_slow_values": {
+              "-0.66": 0.5083780901779705,
+              "-0.44": 0.6914516513688105,
+              "-0.22": 0.3406545711823527,
+              "0.0": 0.2665038129523623,
+              "0.22": 0.24546236518612422,
+              "0.44": 0.31951209981477235,
+              "0.66": 0.6272288636222851
+            },
+            "end_preferred_action": -0.44
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8125,
+            "actual_target_fraction": 0.625,
+            "opponent_miss_rate": 0.3375,
+            "mean_reward": 0.5142691962589073,
+            "target_actual_opponent_miss_rate": 0.46,
+            "other_actual_opponent_miss_rate": 0.13333333333333333,
+            "target_intent_opponent_miss_rate": 0.38461538461538464,
+            "other_intent_opponent_miss_rate": 0.13333333333333333,
+            "first20_target_intent_fraction": 0.6,
+            "last20_target_intent_fraction": 0.85,
+            "adaptation_latency_episodes": 18,
+            "end_fast_values": {
+              "-0.66": 0.6869809224691735,
+              "-0.44": 0.5443806607604422,
+              "-0.22": 0.2609108560846493,
+              "0.0": 0.19243649638707444,
+              "0.22": 0.2428300258224333,
+              "0.44": 0.28956348646051044,
+              "0.66": 0.5491857575755749
+            },
+            "end_slow_values": {
+              "-0.66": 0.682336226474175,
+              "-0.44": 0.6419106696346066,
+              "-0.22": 0.3261053913994429,
+              "0.0": 0.24024809852070708,
+              "0.22": 0.2487687131500957,
+              "0.44": 0.3027811947277148,
+              "0.66": 0.5893025222808397
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20264949,
+        "mode": "full",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8375,
+            "actual_target_fraction": 0.675,
+            "opponent_miss_rate": 0.3125,
+            "mean_reward": 0.48588284719475233,
+            "target_actual_opponent_miss_rate": 0.4444444444444444,
+            "other_actual_opponent_miss_rate": 0.038461538461538464,
+            "target_intent_opponent_miss_rate": 0.3582089552238806,
+            "other_intent_opponent_miss_rate": 0.07692307692307693,
+            "first20_target_intent_fraction": 0.7,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.4210325351894255,
+              "-0.44": 0.7587330100585796,
+              "-0.22": 0.45923130627754705,
+              "0.0": 0.1822610052650463,
+              "0.22": 0.250907805294148,
+              "0.44": 0.39591495233830376,
+              "0.66": 0.17765085569545708
+            },
+            "end_slow_values": {
+              "-0.66": 0.6911693778975599,
+              "-0.44": 0.35308868405366955,
+              "-0.22": 0.29774179520702815,
+              "0.0": 0.22243395033048266,
+              "0.22": 0.32691754713812066,
+              "0.44": 0.28097554141786396,
+              "0.66": 0.18579421623016634
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.6125,
+            "actual_target_fraction": 0.5,
+            "opponent_miss_rate": 0.2625,
+            "mean_reward": 0.46020052506244574,
+            "target_actual_opponent_miss_rate": 0.475,
+            "other_actual_opponent_miss_rate": 0.05,
+            "target_intent_opponent_miss_rate": 0.32653061224489793,
+            "other_intent_opponent_miss_rate": 0.16129032258064516,
+            "first20_target_intent_fraction": 0.05,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 37,
+            "end_fast_values": {
+              "-0.66": 0.2875333334073133,
+              "-0.44": 0.2801967693090247,
+              "-0.22": 0.28268907334977533,
+              "0.0": 0.25778434624286134,
+              "0.22": 0.23201396701058852,
+              "0.44": 0.5977982845111818,
+              "0.66": 0.8055247202965037
+            },
+            "end_slow_values": {
+              "-0.66": 0.4905134145275853,
+              "-0.44": 0.3572814678084381,
+              "-0.22": 0.282358736592702,
+              "0.0": 0.2393675122965394,
+              "0.22": 0.3188408613186021,
+              "0.44": 0.4452486738563915,
+              "0.66": 0.5770918453125893
+            },
+            "end_preferred_action": 0.66
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.775,
+            "actual_target_fraction": 0.6625,
+            "opponent_miss_rate": 0.3125,
+            "mean_reward": 0.5060353513771035,
+            "target_actual_opponent_miss_rate": 0.41509433962264153,
+            "other_actual_opponent_miss_rate": 0.1111111111111111,
+            "target_intent_opponent_miss_rate": 0.3709677419354839,
+            "other_intent_opponent_miss_rate": 0.1111111111111111,
+            "first20_target_intent_fraction": 0.35,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 26,
+            "end_fast_values": {
+              "-0.66": 0.5992377972264432,
+              "-0.44": 0.7024344273547691,
+              "-0.22": 0.321949626545894,
+              "0.0": 0.2244779429068014,
+              "0.22": 0.18643419005306783,
+              "0.44": 0.33908668121960983,
+              "0.66": 0.4643311332530254
+            },
+            "end_slow_values": {
+              "-0.66": 0.6240005491215534,
+              "-0.44": 0.5097446833103787,
+              "-0.22": 0.2962693529045672,
+              "0.0": 0.2411392047833057,
+              "0.22": 0.27569667546464044,
+              "0.44": 0.4136219202424056,
+              "0.66": 0.5307513446568896
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20265958,
+        "mode": "full",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.925,
+            "actual_target_fraction": 0.7,
+            "opponent_miss_rate": 0.2625,
+            "mean_reward": 0.4760158033695109,
+            "target_actual_opponent_miss_rate": 0.35714285714285715,
+            "other_actual_opponent_miss_rate": 0.041666666666666664,
+            "target_intent_opponent_miss_rate": 0.25675675675675674,
+            "other_intent_opponent_miss_rate": 0.3333333333333333,
+            "first20_target_intent_fraction": 0.8,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.7241433196233573,
+              "-0.44": 0.6171894672604592,
+              "-0.22": 0.2330685420873071,
+              "0.0": 0.2881120037862602,
+              "0.22": 0.2465387460889774,
+              "0.44": 0.25825180607130716,
+              "0.66": 0.37728657043268965
+            },
+            "end_slow_values": {
+              "-0.66": 0.7022499589050076,
+              "-0.44": 0.49873102073905967,
+              "-0.22": 0.23767634568618487,
+              "0.0": 0.206158110875591,
+              "0.22": 0.27015913764057764,
+              "0.44": 0.31615678317396306,
+              "0.66": 0.3329185226882745
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.7875,
+            "actual_target_fraction": 0.6,
+            "opponent_miss_rate": 0.375,
+            "mean_reward": 0.5534987228439622,
+            "target_actual_opponent_miss_rate": 0.5416666666666666,
+            "other_actual_opponent_miss_rate": 0.125,
+            "target_intent_opponent_miss_rate": 0.3968253968253968,
+            "other_intent_opponent_miss_rate": 0.29411764705882354,
+            "first20_target_intent_fraction": 0.45,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 21,
+            "end_fast_values": {
+              "-0.66": 0.42912237495343053,
+              "-0.44": 0.3823186819954519,
+              "-0.22": 0.2317524668396874,
+              "0.0": 0.27296869545494484,
+              "0.22": 0.35120810288292703,
+              "0.44": 0.4133952157491604,
+              "0.66": 0.8419964244119553
+            },
+            "end_slow_values": {
+              "-0.66": 0.597191983565204,
+              "-0.44": 0.4557706062076942,
+              "-0.22": 0.2372156968059081,
+              "0.0": 0.22053277429143936,
+              "0.22": 0.3254614657094831,
+              "0.44": 0.44414697772006606,
+              "0.66": 0.7207225841631023
+            },
+            "end_preferred_action": 0.66
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8,
+            "actual_target_fraction": 0.5625,
+            "opponent_miss_rate": 0.25,
+            "mean_reward": 0.4640057562485172,
+            "target_actual_opponent_miss_rate": 0.37777777777777777,
+            "other_actual_opponent_miss_rate": 0.08571428571428572,
+            "target_intent_opponent_miss_rate": 0.265625,
+            "other_intent_opponent_miss_rate": 0.1875,
+            "first20_target_intent_fraction": 0.6,
+            "last20_target_intent_fraction": 0.75,
+            "adaptation_latency_episodes": 19,
+            "end_fast_values": {
+              "-0.66": 0.4319794618762357,
+              "-0.44": 0.4642691798182474,
+              "-0.22": 0.4898892453105649,
+              "0.0": 0.26419479127674955,
+              "0.22": 0.2375092592381738,
+              "0.44": 0.24910548583475706,
+              "0.66": 0.40518929937773374
+            },
+            "end_slow_values": {
+              "-0.66": 0.6277949093662628,
+              "-0.44": 0.4896846674087408,
+              "-0.22": 0.3808084135769178,
+              "0.0": 0.23321437565147676,
+              "0.22": 0.29686267759358786,
+              "0.44": 0.38030858741871176,
+              "0.66": 0.5814402938280646
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20266967,
+        "mode": "full",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8375,
+            "actual_target_fraction": 0.6125,
+            "opponent_miss_rate": 0.2875,
+            "mean_reward": 0.48909038299486657,
+            "target_actual_opponent_miss_rate": 0.46938775510204084,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.31343283582089554,
+            "other_intent_opponent_miss_rate": 0.15384615384615385,
+            "first20_target_intent_fraction": 0.6,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.5377617383183507,
+              "-0.44": 0.4546262097183593,
+              "-0.22": 0.5841281196493712,
+              "0.0": 0.276340415648959,
+              "0.22": 0.2345789691387794,
+              "0.44": 0.2941033416282124,
+              "0.66": 0.20230891666205708
+            },
+            "end_slow_values": {
+              "-0.66": 0.7447332427679718,
+              "-0.44": 0.8266779682119558,
+              "-0.22": 0.42705952868834185,
+              "0.0": 0.1706612479495717,
+              "0.22": 0.25771779696377267,
+              "0.44": 0.328836968410821,
+              "0.66": 0.2402673574124356
+            },
+            "end_preferred_action": -0.44
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.6125,
+            "actual_target_fraction": 0.525,
+            "opponent_miss_rate": 0.2125,
+            "mean_reward": 0.42233305722056985,
+            "target_actual_opponent_miss_rate": 0.38095238095238093,
+            "other_actual_opponent_miss_rate": 0.02631578947368421,
+            "target_intent_opponent_miss_rate": 0.2857142857142857,
+            "other_intent_opponent_miss_rate": 0.0967741935483871,
+            "first20_target_intent_fraction": 0.0,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 39,
+            "end_fast_values": {
+              "-0.66": 0.24848950470689896,
+              "-0.44": 0.5211974438483309,
+              "-0.22": 0.25312954286625444,
+              "0.0": 0.24670703919292433,
+              "0.22": 0.38774221169174483,
+              "0.44": 0.7485147591791734,
+              "0.66": 0.3912855874865275
+            },
+            "end_slow_values": {
+              "-0.66": 0.41683216047287847,
+              "-0.44": 0.7219420020443216,
+              "-0.22": 0.3431107247292572,
+              "0.0": 0.19133267005539284,
+              "0.22": 0.29665556754283245,
+              "0.44": 0.425770375605747,
+              "0.66": 0.500946184783568
+            },
+            "end_preferred_action": 0.44
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8125,
+            "actual_target_fraction": 0.6625,
+            "opponent_miss_rate": 0.4,
+            "mean_reward": 0.5638779065095602,
+            "target_actual_opponent_miss_rate": 0.5283018867924528,
+            "other_actual_opponent_miss_rate": 0.14814814814814814,
+            "target_intent_opponent_miss_rate": 0.46153846153846156,
+            "other_intent_opponent_miss_rate": 0.13333333333333333,
+            "first20_target_intent_fraction": 0.55,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 19,
+            "end_fast_values": {
+              "-0.66": 0.7240196522092639,
+              "-0.44": 0.6306075789768141,
+              "-0.22": 0.3710861349530961,
+              "0.0": 0.2670125942206235,
+              "0.22": 0.2601243823456394,
+              "0.44": 0.5087495894536269,
+              "0.66": 0.5564969301730699
+            },
+            "end_slow_values": {
+              "-0.66": 0.7314532165380416,
+              "-0.44": 0.6428633909194282,
+              "-0.22": 0.35958872178185447,
+              "0.0": 0.21230764373517663,
+              "0.22": 0.27825977209056024,
+              "0.44": 0.4064289242727063,
+              "0.66": 0.47134460870539313
+            },
+            "end_preferred_action": -0.44
+          }
+        ]
+      },
+      {
+        "seed": 20267976,
+        "mode": "full",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.95,
+            "actual_target_fraction": 0.725,
+            "opponent_miss_rate": 0.325,
+            "mean_reward": 0.5367088439725561,
+            "target_actual_opponent_miss_rate": 0.43103448275862066,
+            "other_actual_opponent_miss_rate": 0.045454545454545456,
+            "target_intent_opponent_miss_rate": 0.32894736842105265,
+            "other_intent_opponent_miss_rate": 0.25,
+            "first20_target_intent_fraction": 0.95,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.5184685288318052,
+              "-0.44": 0.4307903885129568,
+              "-0.22": 0.45870042447721854,
+              "0.0": 0.2430417097181818,
+              "0.22": 0.26458522728809586,
+              "0.44": 0.2624677904137808,
+              "0.66": 0.5220002065919671
+            },
+            "end_slow_values": {
+              "-0.66": 0.6485983173147901,
+              "-0.44": 0.39816676242413446,
+              "-0.22": 0.4055340712457731,
+              "0.0": 0.22877958503449708,
+              "0.22": 0.2537207486090177,
+              "0.44": 0.33312319018434283,
+              "0.66": 0.22950748404885457
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.7125,
+            "actual_target_fraction": 0.5375,
+            "opponent_miss_rate": 0.3,
+            "mean_reward": 0.49201958880347096,
+            "target_actual_opponent_miss_rate": 0.5348837209302325,
+            "other_actual_opponent_miss_rate": 0.02702702702702703,
+            "target_intent_opponent_miss_rate": 0.38596491228070173,
+            "other_intent_opponent_miss_rate": 0.08695652173913043,
+            "first20_target_intent_fraction": 0.35,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 27,
+            "end_fast_values": {
+              "-0.66": 0.2718527553633307,
+              "-0.44": 0.2609613665158284,
+              "-0.22": 0.28132214130592215,
+              "0.0": 0.22052973189517763,
+              "0.22": 0.22048314762349536,
+              "0.44": 0.7421817190051345,
+              "0.66": 0.7093893417044957
+            },
+            "end_slow_values": {
+              "-0.66": 0.4489644492557799,
+              "-0.44": 0.359326735248104,
+              "-0.22": 0.3450897210716557,
+              "0.0": 0.22627615844675453,
+              "0.22": 0.25615069162629256,
+              "0.44": 0.42868572266025007,
+              "0.66": 0.7008052490530923
+            },
+            "end_preferred_action": 0.66
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.7625,
+            "actual_target_fraction": 0.575,
+            "opponent_miss_rate": 0.2875,
+            "mean_reward": 0.4740880165277308,
+            "target_actual_opponent_miss_rate": 0.43478260869565216,
+            "other_actual_opponent_miss_rate": 0.08823529411764706,
+            "target_intent_opponent_miss_rate": 0.29508196721311475,
+            "other_intent_opponent_miss_rate": 0.2631578947368421,
+            "first20_target_intent_fraction": 0.3,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 24,
+            "end_fast_values": {
+              "-0.66": 0.7050322549844068,
+              "-0.44": 0.5242974792130768,
+              "-0.22": 0.2355283152456412,
+              "0.0": 0.20183869785568354,
+              "0.22": 0.2647691566643844,
+              "0.44": 0.18998390279640576,
+              "0.66": 0.2414043316201494
+            },
+            "end_slow_values": {
+              "-0.66": 0.6431052549433686,
+              "-0.44": 0.438615553317767,
+              "-0.22": 0.315698734548172,
+              "0.0": 0.22070214475381614,
+              "0.22": 0.2591060051106039,
+              "0.44": 0.34197452213559604,
+              "0.66": 0.5086323204299239
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      }
+    ],
+    "fast_only": [
+      {
+        "seed": 20260913,
+        "mode": "fast_only",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.85,
+            "actual_target_fraction": 0.675,
+            "opponent_miss_rate": 0.3,
+            "mean_reward": 0.506651649758766,
+            "target_actual_opponent_miss_rate": 0.4444444444444444,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.35294117647058826,
+            "other_intent_opponent_miss_rate": 0.0,
+            "first20_target_intent_fraction": 0.7,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.855500007795392,
+              "-0.44": 0.8479353254769659,
+              "-0.22": 0.585471369086031,
+              "0.0": 0.320604381805202,
+              "0.22": 0.2824758634320217,
+              "0.44": 0.3210094460520281,
+              "0.66": 0.33529396009421697
+            },
+            "end_slow_values": {
+              "-0.66": 0.7901574086352919,
+              "-0.44": 0.4828996525777657,
+              "-0.22": 0.3591463694842977,
+              "0.0": 0.25736989642882807,
+              "0.22": 0.3384733619351886,
+              "0.44": 0.3779753537143827,
+              "0.66": 0.22252782394992898
+            },
+            "end_preferred_action": -0.44
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.7125,
+            "actual_target_fraction": 0.5125,
+            "opponent_miss_rate": 0.25,
+            "mean_reward": 0.447839872064162,
+            "target_actual_opponent_miss_rate": 0.4634146341463415,
+            "other_actual_opponent_miss_rate": 0.02564102564102564,
+            "target_intent_opponent_miss_rate": 0.2807017543859649,
+            "other_intent_opponent_miss_rate": 0.17391304347826086,
+            "first20_target_intent_fraction": 0.15,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 34,
+            "end_fast_values": {
+              "-0.66": 0.2772441305493879,
+              "-0.44": 0.37116381347765115,
+              "-0.22": 0.25711446799258564,
+              "0.0": 0.23729225328321688,
+              "0.22": 0.3032786165334557,
+              "0.44": 0.9266639974872843,
+              "0.66": 0.7446090635880966
+            },
+            "end_slow_values": {
+              "-0.66": 0.4344413547190991,
+              "-0.44": 0.45415751875826876,
+              "-0.22": 0.32554283161639885,
+              "0.0": 0.25346855164740817,
+              "0.22": 0.3645017766459517,
+              "0.44": 0.5948173560979909,
+              "0.66": 0.4934849748229029
+            },
+            "end_preferred_action": 0.44
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.5125,
+            "actual_target_fraction": 0.475,
+            "opponent_miss_rate": 0.325,
+            "mean_reward": 0.5056890040379324,
+            "target_actual_opponent_miss_rate": 0.5263157894736842,
+            "other_actual_opponent_miss_rate": 0.14285714285714285,
+            "target_intent_opponent_miss_rate": 0.3902439024390244,
+            "other_intent_opponent_miss_rate": 0.2564102564102564,
+            "first20_target_intent_fraction": 0.05,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 55,
+            "end_fast_values": {
+              "-0.66": 0.8682047984036665,
+              "-0.44": 0.8131322641322167,
+              "-0.22": 0.30439612663443705,
+              "0.0": 0.26767530865286676,
+              "0.22": 0.24393062789089856,
+              "0.44": 0.3846464254485108,
+              "0.66": 0.5054386230321377
+            },
+            "end_slow_values": {
+              "-0.66": 0.6739095186339402,
+              "-0.44": 0.5195736948347965,
+              "-0.22": 0.335101118686523,
+              "0.0": 0.25778134669413216,
+              "0.22": 0.3188987239504929,
+              "0.44": 0.5416574047554648,
+              "0.66": 0.44375352649433913
+            },
+            "end_preferred_action": -0.44
+          }
+        ]
+      },
+      {
+        "seed": 20261922,
+        "mode": "fast_only",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.95,
+            "actual_target_fraction": 0.75,
+            "opponent_miss_rate": 0.375,
+            "mean_reward": 0.5510007003881675,
+            "target_actual_opponent_miss_rate": 0.5,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.39473684210526316,
+            "other_intent_opponent_miss_rate": 0.0,
+            "first20_target_intent_fraction": 0.9,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.8289049672807269,
+              "-0.44": 0.36449391273853077,
+              "-0.22": 0.27868876130944975,
+              "0.0": 0.2501031498996355,
+              "0.22": 0.17488459948750668,
+              "0.44": 0.24413024767201286,
+              "0.66": 0.3042398370368501
+            },
+            "end_slow_values": {
+              "-0.66": 0.8547999493158374,
+              "-0.44": 0.34676936261731506,
+              "-0.22": 0.2966843688654401,
+              "0.0": 0.3266040138259169,
+              "0.22": 0.19505076032696733,
+              "0.44": 0.23516784779134903,
+              "0.66": 0.3529095791796265
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.8625,
+            "actual_target_fraction": 0.7125,
+            "opponent_miss_rate": 0.3625,
+            "mean_reward": 0.5462566823747265,
+            "target_actual_opponent_miss_rate": 0.5087719298245614,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.4057971014492754,
+            "other_intent_opponent_miss_rate": 0.09090909090909091,
+            "first20_target_intent_fraction": 0.5,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 20,
+            "end_fast_values": {
+              "-0.66": 0.2778787033671187,
+              "-0.44": 0.26115439696599496,
+              "-0.22": 0.22672134660718835,
+              "0.0": 0.26677131038049895,
+              "0.22": 0.4168965327900102,
+              "0.44": 0.39942273486513724,
+              "0.66": 0.9431860027436074
+            },
+            "end_slow_values": {
+              "-0.66": 0.6649563080125265,
+              "-0.44": 0.3092403719462108,
+              "-0.22": 0.2816429466731699,
+              "0.0": 0.29903484018578164,
+              "0.22": 0.32092866879347876,
+              "0.44": 0.3613355541372609,
+              "0.66": 0.7418449263935675
+            },
+            "end_preferred_action": 0.66
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.725,
+            "actual_target_fraction": 0.6125,
+            "opponent_miss_rate": 0.2875,
+            "mean_reward": 0.4839508234799065,
+            "target_actual_opponent_miss_rate": 0.40816326530612246,
+            "other_actual_opponent_miss_rate": 0.0967741935483871,
+            "target_intent_opponent_miss_rate": 0.3103448275862069,
+            "other_intent_opponent_miss_rate": 0.22727272727272727,
+            "first20_target_intent_fraction": 0.2,
+            "last20_target_intent_fraction": 0.85,
+            "adaptation_latency_episodes": 27,
+            "end_fast_values": {
+              "-0.66": 0.748550712459497,
+              "-0.44": 0.5904641379218174,
+              "-0.22": 0.4555739696168597,
+              "0.0": 0.28640356193676053,
+              "0.22": 0.20852676984255059,
+              "0.44": 0.2211389385122687,
+              "0.66": 0.24509614622160156
+            },
+            "end_slow_values": {
+              "-0.66": 0.6862522185705547,
+              "-0.44": 0.43172252378932247,
+              "-0.22": 0.31587306093525375,
+              "0.0": 0.2908521360961754,
+              "0.22": 0.2731316971610025,
+              "0.44": 0.32111097642851516,
+              "0.66": 0.601701855191256
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20262931,
+        "mode": "fast_only",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.85,
+            "actual_target_fraction": 0.725,
+            "opponent_miss_rate": 0.35,
+            "mean_reward": 0.522938893597213,
+            "target_actual_opponent_miss_rate": 0.4827586206896552,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.36764705882352944,
+            "other_intent_opponent_miss_rate": 0.25,
+            "first20_target_intent_fraction": 0.75,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.6301310881453925,
+              "-0.44": 0.6831164412553348,
+              "-0.22": 0.30360757553630163,
+              "0.0": 0.1897427054138346,
+              "0.22": 0.27185801110649704,
+              "0.44": 0.21250596318856207,
+              "0.66": 0.2485254143302748
+            },
+            "end_slow_values": {
+              "-0.66": 0.7488220895437716,
+              "-0.44": 0.3805682447298781,
+              "-0.22": 0.23804391507338216,
+              "0.0": 0.156362836564342,
+              "0.22": 0.2076467014384045,
+              "0.44": 0.1722167852305641,
+              "0.66": 0.3104616792820417
+            },
+            "end_preferred_action": -0.44
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.8125,
+            "actual_target_fraction": 0.675,
+            "opponent_miss_rate": 0.3875,
+            "mean_reward": 0.5685748858412597,
+            "target_actual_opponent_miss_rate": 0.5555555555555556,
+            "other_actual_opponent_miss_rate": 0.038461538461538464,
+            "target_intent_opponent_miss_rate": 0.4461538461538462,
+            "other_intent_opponent_miss_rate": 0.13333333333333333,
+            "first20_target_intent_fraction": 0.45,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 21,
+            "end_fast_values": {
+              "-0.66": 0.2982085261381258,
+              "-0.44": 0.2906604426736529,
+              "-0.22": 0.2411778838963633,
+              "0.0": 0.2825817960322149,
+              "0.22": 0.5069171756554934,
+              "0.44": 0.9335513141346439,
+              "0.66": 0.7018005005535302
+            },
+            "end_slow_values": {
+              "-0.66": 0.5985889448034284,
+              "-0.44": 0.3556829455077215,
+              "-0.22": 0.2330031613435727,
+              "0.0": 0.20896187171256914,
+              "0.22": 0.3401437100614037,
+              "0.44": 0.4572749377933981,
+              "0.66": 0.6790485433723505
+            },
+            "end_preferred_action": 0.44
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.6125,
+            "actual_target_fraction": 0.5625,
+            "opponent_miss_rate": 0.35,
+            "mean_reward": 0.5276939838160544,
+            "target_actual_opponent_miss_rate": 0.4888888888888889,
+            "other_actual_opponent_miss_rate": 0.17142857142857143,
+            "target_intent_opponent_miss_rate": 0.3877551020408163,
+            "other_intent_opponent_miss_rate": 0.2903225806451613,
+            "first20_target_intent_fraction": 0.1,
+            "last20_target_intent_fraction": 0.85,
+            "adaptation_latency_episodes": 38,
+            "end_fast_values": {
+              "-0.66": 0.7860990004972292,
+              "-0.44": 0.7105374030543928,
+              "-0.22": 0.5057165142140091,
+              "0.0": 0.244784519026145,
+              "0.22": 0.24913026015687822,
+              "0.44": 0.4267875456486248,
+              "0.66": 0.6213204497589071
+            },
+            "end_slow_values": {
+              "-0.66": 0.731504326342835,
+              "-0.44": 0.42633697131253023,
+              "-0.22": 0.28495622254198055,
+              "0.0": 0.22115203291843152,
+              "0.22": 0.30960320344853204,
+              "0.44": 0.45359730099105583,
+              "0.66": 0.5687059068961187
+            },
+            "end_preferred_action": -0.44
+          }
+        ]
+      },
+      {
+        "seed": 20263940,
+        "mode": "fast_only",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8375,
+            "actual_target_fraction": 0.55,
+            "opponent_miss_rate": 0.1875,
+            "mean_reward": 0.4283840368540977,
+            "target_actual_opponent_miss_rate": 0.3409090909090909,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.22388059701492538,
+            "other_intent_opponent_miss_rate": 0.0,
+            "first20_target_intent_fraction": 0.6,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 19,
+            "end_fast_values": {
+              "-0.66": 0.6665292591082436,
+              "-0.44": 0.46269527235026986,
+              "-0.22": 0.40251161461730756,
+              "0.0": 0.28298645448014037,
+              "0.22": 0.26884129097882054,
+              "0.44": 0.26136091658437943,
+              "0.66": 0.28083244551069575
+            },
+            "end_slow_values": {
+              "-0.66": 0.44638897375343217,
+              "-0.44": 0.7640708910528206,
+              "-0.22": 0.4284278672166278,
+              "0.0": 0.29827200198538417,
+              "0.22": 0.2714048570813263,
+              "0.44": 0.19306350439680678,
+              "0.66": 0.2941281805592204
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.825,
+            "actual_target_fraction": 0.65,
+            "opponent_miss_rate": 0.3625,
+            "mean_reward": 0.534248395313558,
+            "target_actual_opponent_miss_rate": 0.5192307692307693,
+            "other_actual_opponent_miss_rate": 0.07142857142857142,
+            "target_intent_opponent_miss_rate": 0.3939393939393939,
+            "other_intent_opponent_miss_rate": 0.21428571428571427,
+            "first20_target_intent_fraction": 0.55,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 20,
+            "end_fast_values": {
+              "-0.66": 0.5234006782098996,
+              "-0.44": 0.3015292489008842,
+              "-0.22": 0.2291090946682764,
+              "0.0": 0.2333282152049654,
+              "0.22": 0.22941888952266387,
+              "0.44": 0.7236074569315476,
+              "0.66": 0.6922522446601961
+            },
+            "end_slow_values": {
+              "-0.66": 0.4389742009460456,
+              "-0.44": 0.6843561895841115,
+              "-0.22": 0.3766184462591699,
+              "0.0": 0.27475437125400026,
+              "0.22": 0.2615674894153985,
+              "0.44": 0.43803560698727906,
+              "0.66": 0.6929932062099564
+            },
+            "end_preferred_action": 0.44
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8,
+            "actual_target_fraction": 0.6875,
+            "opponent_miss_rate": 0.275,
+            "mean_reward": 0.47944265057594976,
+            "target_actual_opponent_miss_rate": 0.38181818181818183,
+            "other_actual_opponent_miss_rate": 0.04,
+            "target_intent_opponent_miss_rate": 0.3125,
+            "other_intent_opponent_miss_rate": 0.125,
+            "first20_target_intent_fraction": 0.3,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 24,
+            "end_fast_values": {
+              "-0.66": 0.8484102738584722,
+              "-0.44": 0.6268017439459421,
+              "-0.22": 0.34436026071439896,
+              "0.0": 0.2778112466681023,
+              "0.22": 0.2222537896881134,
+              "0.44": 0.5105794999592965,
+              "0.66": 0.28702780695039287
+            },
+            "end_slow_values": {
+              "-0.66": 0.6529968393632679,
+              "-0.44": 0.6431476361511168,
+              "-0.22": 0.3742418749859443,
+              "0.0": 0.2807395572519718,
+              "0.22": 0.25216584313258966,
+              "0.44": 0.4265101360475668,
+              "0.66": 0.5254995230507887
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20264949,
+        "mode": "fast_only",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.85,
+            "actual_target_fraction": 0.7125,
+            "opponent_miss_rate": 0.3375,
+            "mean_reward": 0.5202175219777678,
+            "target_actual_opponent_miss_rate": 0.47368421052631576,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.38235294117647056,
+            "other_intent_opponent_miss_rate": 0.08333333333333333,
+            "first20_target_intent_fraction": 0.7,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.8004269470283543,
+              "-0.44": 0.7009321536965109,
+              "-0.22": 0.31357380225441067,
+              "0.0": 0.23490700844407525,
+              "0.22": 0.2820489589148396,
+              "0.44": 0.2895247062312668,
+              "0.66": 0.26412295880804093
+            },
+            "end_slow_values": {
+              "-0.66": 0.861849426835852,
+              "-0.44": 0.4631286633603642,
+              "-0.22": 0.26551007752856914,
+              "0.0": 0.22874848904957007,
+              "0.22": 0.3284690707059916,
+              "0.44": 0.26978403034072845,
+              "0.66": 0.20209402935278847
+            },
+            "end_preferred_action": -0.66
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.85,
+            "actual_target_fraction": 0.625,
+            "opponent_miss_rate": 0.3,
+            "mean_reward": 0.49405990280181117,
+            "target_actual_opponent_miss_rate": 0.44,
+            "other_actual_opponent_miss_rate": 0.06666666666666667,
+            "target_intent_opponent_miss_rate": 0.3235294117647059,
+            "other_intent_opponent_miss_rate": 0.16666666666666666,
+            "first20_target_intent_fraction": 0.6,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 18,
+            "end_fast_values": {
+              "-0.66": 0.37902984472582935,
+              "-0.44": 0.3391721357915873,
+              "-0.22": 0.24001419695847903,
+              "0.0": 0.24739839147380271,
+              "0.22": 0.29686095408819174,
+              "0.44": 0.47458025159209755,
+              "0.66": 0.38888632263567113
+            },
+            "end_slow_values": {
+              "-0.66": 0.6976030764505133,
+              "-0.44": 0.4125545446475138,
+              "-0.22": 0.25024253823945203,
+              "0.0": 0.23017366295871985,
+              "0.22": 0.31576882134755446,
+              "0.44": 0.4328441101847972,
+              "0.66": 0.5785577181623699
+            },
+            "end_preferred_action": 0.44
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8375,
+            "actual_target_fraction": 0.675,
+            "opponent_miss_rate": 0.2875,
+            "mean_reward": 0.4866790765666891,
+            "target_actual_opponent_miss_rate": 0.3888888888888889,
+            "other_actual_opponent_miss_rate": 0.07692307692307693,
+            "target_intent_opponent_miss_rate": 0.2835820895522388,
+            "other_intent_opponent_miss_rate": 0.3076923076923077,
+            "first20_target_intent_fraction": 0.85,
+            "last20_target_intent_fraction": 0.7,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.7560606209239941,
+              "-0.44": 0.7517840516862806,
+              "-0.22": 0.3155604458825269,
+              "0.0": 0.2292104638809619,
+              "0.22": 0.21213997252674974,
+              "0.44": 0.4742470188956903,
+              "0.66": 0.3159030039764162
+            },
+            "end_slow_values": {
+              "-0.66": 0.6777482136166678,
+              "-0.44": 0.5085037427928613,
+              "-0.22": 0.2876507164354637,
+              "0.0": 0.23387693865807943,
+              "0.22": 0.2950278316693992,
+              "0.44": 0.44549088317901225,
+              "0.66": 0.46112807621794843
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20265958,
+        "mode": "fast_only",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8,
+            "actual_target_fraction": 0.625,
+            "opponent_miss_rate": 0.2625,
+            "mean_reward": 0.462802894631455,
+            "target_actual_opponent_miss_rate": 0.4,
+            "other_actual_opponent_miss_rate": 0.03333333333333333,
+            "target_intent_opponent_miss_rate": 0.28125,
+            "other_intent_opponent_miss_rate": 0.1875,
+            "first20_target_intent_fraction": 0.8,
+            "last20_target_intent_fraction": 0.65,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.4317432079466411,
+              "-0.44": 0.6179911484990904,
+              "-0.22": 0.27798155207942615,
+              "0.0": 0.24870929968937114,
+              "0.22": 0.23454617637874645,
+              "0.44": 0.33451353653555993,
+              "0.66": 0.23224949504879977
+            },
+            "end_slow_values": {
+              "-0.66": 0.749175166450383,
+              "-0.44": 0.4694079952003818,
+              "-0.22": 0.2762412265524201,
+              "0.0": 0.1925349467108127,
+              "0.22": 0.2664594806699871,
+              "0.44": 0.3422786744166294,
+              "0.66": 0.28625878403722294
+            },
+            "end_preferred_action": -0.44
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.925,
+            "actual_target_fraction": 0.675,
+            "opponent_miss_rate": 0.3625,
+            "mean_reward": 0.5328655070547537,
+            "target_actual_opponent_miss_rate": 0.5,
+            "other_actual_opponent_miss_rate": 0.07692307692307693,
+            "target_intent_opponent_miss_rate": 0.3783783783783784,
+            "other_intent_opponent_miss_rate": 0.16666666666666666,
+            "first20_target_intent_fraction": 0.7,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.46790000774786916,
+              "-0.44": 0.30895734678050446,
+              "-0.22": 0.19895170045292543,
+              "0.0": 0.22475211418524524,
+              "0.22": 0.3977242954362412,
+              "0.44": 0.4453558189034389,
+              "0.66": 0.8190364711864033
+            },
+            "end_slow_values": {
+              "-0.66": 0.6489706599640974,
+              "-0.44": 0.4208033842193695,
+              "-0.22": 0.25280112999014115,
+              "0.0": 0.2062538394498985,
+              "0.22": 0.3531709132233595,
+              "0.44": 0.41429374547260905,
+              "0.66": 0.6966446473729601
+            },
+            "end_preferred_action": 0.66
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.875,
+            "actual_target_fraction": 0.725,
+            "opponent_miss_rate": 0.325,
+            "mean_reward": 0.5161714943236202,
+            "target_actual_opponent_miss_rate": 0.41379310344827586,
+            "other_actual_opponent_miss_rate": 0.09090909090909091,
+            "target_intent_opponent_miss_rate": 0.34285714285714286,
+            "other_intent_opponent_miss_rate": 0.2,
+            "first20_target_intent_fraction": 0.6,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 19,
+            "end_fast_values": {
+              "-0.66": 0.5320759499734559,
+              "-0.44": 0.5850813486549606,
+              "-0.22": 0.2727182864926144,
+              "0.0": 0.20094382763777752,
+              "0.22": 0.24879397690531374,
+              "0.44": 0.3991068740908684,
+              "0.66": 0.25738600379983567
+            },
+            "end_slow_values": {
+              "-0.66": 0.6621436067706791,
+              "-0.44": 0.4708181727789434,
+              "-0.22": 0.25483009686128755,
+              "0.0": 0.20644073239332572,
+              "0.22": 0.30584297792701226,
+              "0.44": 0.40785273124764504,
+              "0.66": 0.5603338805423366
+            },
+            "end_preferred_action": 0.66
+          }
+        ]
+      },
+      {
+        "seed": 20266967,
+        "mode": "fast_only",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.8125,
+            "actual_target_fraction": 0.625,
+            "opponent_miss_rate": 0.2875,
+            "mean_reward": 0.48955239665395256,
+            "target_actual_opponent_miss_rate": 0.44,
+            "other_actual_opponent_miss_rate": 0.03333333333333333,
+            "target_intent_opponent_miss_rate": 0.3230769230769231,
+            "other_intent_opponent_miss_rate": 0.13333333333333333,
+            "first20_target_intent_fraction": 0.6,
+            "last20_target_intent_fraction": 0.85,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.8424711245306822,
+              "-0.44": 0.7323708732228746,
+              "-0.22": 0.3163938600919062,
+              "0.0": 0.19846514141994998,
+              "0.22": 0.2468606992484144,
+              "0.44": 0.2983819004971766,
+              "0.66": 0.4029612530720898
+            },
+            "end_slow_values": {
+              "-0.66": 0.7747853545873734,
+              "-0.44": 0.8417439029699069,
+              "-0.22": 0.30358654200393476,
+              "0.0": 0.17158804659194318,
+              "0.22": 0.2677157043736412,
+              "0.44": 0.3079246419266083,
+              "0.66": 0.2840019946582615
+            },
+            "end_preferred_action": -0.44
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.7125,
+            "actual_target_fraction": 0.5875,
+            "opponent_miss_rate": 0.2625,
+            "mean_reward": 0.4519970674337786,
+            "target_actual_opponent_miss_rate": 0.40425531914893614,
+            "other_actual_opponent_miss_rate": 0.06060606060606061,
+            "target_intent_opponent_miss_rate": 0.3333333333333333,
+            "other_intent_opponent_miss_rate": 0.08695652173913043,
+            "first20_target_intent_fraction": 0.0,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 30,
+            "end_fast_values": {
+              "-0.66": 0.4634425840367602,
+              "-0.44": 0.24466604388221783,
+              "-0.22": 0.2822098231799902,
+              "0.0": 0.19194463206728385,
+              "0.22": 0.3644944824739461,
+              "0.44": 0.4553431421673487,
+              "0.66": 0.6286266010506762
+            },
+            "end_slow_values": {
+              "-0.66": 0.5137816679375634,
+              "-0.44": 0.6594413443673424,
+              "-0.22": 0.29665839221931095,
+              "0.0": 0.1800937050227512,
+              "0.22": 0.3441253553726235,
+              "0.44": 0.3658717775566049,
+              "0.66": 0.5493778251074963
+            },
+            "end_preferred_action": 0.66
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.7875,
+            "actual_target_fraction": 0.6875,
+            "opponent_miss_rate": 0.3625,
+            "mean_reward": 0.5387244314729003,
+            "target_actual_opponent_miss_rate": 0.4727272727272727,
+            "other_actual_opponent_miss_rate": 0.12,
+            "target_intent_opponent_miss_rate": 0.3968253968253968,
+            "other_intent_opponent_miss_rate": 0.23529411764705882,
+            "first20_target_intent_fraction": 0.65,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.9259437682997838,
+              "-0.44": 0.7043314635179858,
+              "-0.22": 0.34107613040138407,
+              "0.0": 0.17581006003346084,
+              "0.22": 0.21010934682437885,
+              "0.44": 0.4086242460117061,
+              "0.66": 0.2869620010195849
+            },
+            "end_slow_values": {
+              "-0.66": 0.7158258968959251,
+              "-0.44": 0.6316468983942437,
+              "-0.22": 0.33696316987877084,
+              "0.0": 0.18005951475936616,
+              "0.22": 0.3049980218801566,
+              "0.44": 0.36766498018173815,
+              "0.66": 0.46559115771071624
+            },
+            "end_preferred_action": -0.66
+          }
+        ]
+      },
+      {
+        "seed": 20267976,
+        "mode": "fast_only",
+        "phase_reports": [
+          {
+            "phase": "A1",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.925,
+            "actual_target_fraction": 0.7125,
+            "opponent_miss_rate": 0.325,
+            "mean_reward": 0.5355396576013582,
+            "target_actual_opponent_miss_rate": 0.43859649122807015,
+            "other_actual_opponent_miss_rate": 0.043478260869565216,
+            "target_intent_opponent_miss_rate": 0.32432432432432434,
+            "other_intent_opponent_miss_rate": 0.3333333333333333,
+            "first20_target_intent_fraction": 0.95,
+            "last20_target_intent_fraction": 0.9,
+            "adaptation_latency_episodes": 16,
+            "end_fast_values": {
+              "-0.66": 0.4572503168233413,
+              "-0.44": 0.6515392979513337,
+              "-0.22": 0.45623452251606156,
+              "0.0": 0.26144586489618127,
+              "0.22": 0.2517171468192586,
+              "0.44": 0.23011358425247042,
+              "0.66": 0.5220002065919671
+            },
+            "end_slow_values": {
+              "-0.66": 0.6346362630038498,
+              "-0.44": 0.41110522190215587,
+              "-0.22": 0.41399451123699577,
+              "0.0": 0.23254114464148198,
+              "0.22": 0.25163460770544616,
+              "0.44": 0.32400337455322054,
+              "0.66": 0.22950748404885457
+            },
+            "end_preferred_action": -0.44
+          },
+          {
+            "phase": "B",
+            "mode": "weak_down",
+            "episodes": 80,
+            "target_contact_sign": 1,
+            "intended_target_fraction": 0.65,
+            "actual_target_fraction": 0.4875,
+            "opponent_miss_rate": 0.2625,
+            "mean_reward": 0.46361374583580867,
+            "target_actual_opponent_miss_rate": 0.48717948717948717,
+            "other_actual_opponent_miss_rate": 0.04878048780487805,
+            "target_intent_opponent_miss_rate": 0.28846153846153844,
+            "other_intent_opponent_miss_rate": 0.21428571428571427,
+            "first20_target_intent_fraction": 0.35,
+            "last20_target_intent_fraction": 1.0,
+            "adaptation_latency_episodes": 43,
+            "end_fast_values": {
+              "-0.66": 0.3259513876969361,
+              "-0.44": 0.35926143211316014,
+              "-0.22": 0.22486638741999973,
+              "0.0": 0.263580329092047,
+              "0.22": 0.7603808995098653,
+              "0.44": 0.6889596072838534,
+              "0.66": 0.6455142415526016
+            },
+            "end_slow_values": {
+              "-0.66": 0.4773653898046256,
+              "-0.44": 0.38955557610847635,
+              "-0.22": 0.31415391401475906,
+              "0.0": 0.24354601663857695,
+              "0.22": 0.4418677264436228,
+              "0.44": 0.43311870319878276,
+              "0.66": 0.50958403908984
+            },
+            "end_preferred_action": 0.22
+          },
+          {
+            "phase": "A2",
+            "mode": "weak_up",
+            "episodes": 80,
+            "target_contact_sign": -1,
+            "intended_target_fraction": 0.85,
+            "actual_target_fraction": 0.65,
+            "opponent_miss_rate": 0.325,
+            "mean_reward": 0.5102210791760893,
+            "target_actual_opponent_miss_rate": 0.5,
+            "other_actual_opponent_miss_rate": 0.0,
+            "target_intent_opponent_miss_rate": 0.36764705882352944,
+            "other_intent_opponent_miss_rate": 0.08333333333333333,
+            "first20_target_intent_fraction": 0.65,
+            "last20_target_intent_fraction": 0.95,
+            "adaptation_latency_episodes": 17,
+            "end_fast_values": {
+              "-0.66": 0.5618817181237203,
+              "-0.44": 0.6345498106767409,
+              "-0.22": 0.44760952557603645,
+              "0.0": 0.25281651619007106,
+              "0.22": 0.280034844184744,
+              "0.44": 0.27514388550700825,
+              "0.66": 0.2842704346373938
+            },
+            "end_slow_values": {
+              "-0.66": 0.6354435121524711,
+              "-0.44": 0.48681811694315097,
+              "-0.22": 0.3683341595807213,
+              "0.0": 0.23855385251645314,
+              "0.22": 0.3842419612796447,
+              "0.44": 0.3699188487714031,
+              "0.66": 0.42516759813052113
+            },
+            "end_preferred_action": -0.44
+          }
+        ]
+      }
+    ]
+  }
+}

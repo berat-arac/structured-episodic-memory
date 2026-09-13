@@ -1,0 +1,238 @@
+{
+  "status": "SEM_VERTICAL_VELOCITY_SENSOR_ABLATION_COMPLETE",
+  "protocol": {
+    "paired_seeds": true,
+    "seeds": 8,
+    "outcomes_per_seed": 140,
+    "aim_weight": 0.0,
+    "intent_mode": "neutral",
+    "full_sensor": "original motor state",
+    "no_vertical_velocity": "vf and vs neutralized; all other state features unchanged",
+    "dense_frame_reward": false,
+    "no_action_rule_added": true
+  },
+  "aggregate": {
+    "full_sensor": {
+      "mean_early_misses": 15.5,
+      "mean_late_misses": 4.25,
+      "miss_reduction_fraction": 0.7258064516129032,
+      "mean_early_hit_rate": 0.6125,
+      "mean_late_hit_rate": 0.89375,
+      "improved_seeds": 8,
+      "worse_seeds": 0
+    },
+    "no_vertical_velocity": {
+      "mean_early_misses": 11.375,
+      "mean_late_misses": 3.125,
+      "miss_reduction_fraction": 0.7252747252747253,
+      "mean_early_hit_rate": 0.715625,
+      "mean_late_hit_rate": 0.921875,
+      "improved_seeds": 8,
+      "worse_seeds": 0
+    }
+  },
+  "paired": {
+    "mean_late_miss_penalty_no_vy_minus_full": -1.125,
+    "full_better_late_seeds": 3,
+    "ties": 1,
+    "no_vy_better_late_seeds": 4
+  },
+  "runs": {
+    "full_sensor": [
+      {
+        "seed": 41000,
+        "mode": "full_sensor",
+        "coach_style": "top_bias",
+        "outcomes": 140,
+        "frames": 44387,
+        "early_misses": 14,
+        "late_misses": 6,
+        "early_hit_rate": 0.65,
+        "late_hit_rate": 0.85,
+        "motor_updates": 10658
+      },
+      {
+        "seed": 41097,
+        "mode": "full_sensor",
+        "coach_style": "spinner",
+        "outcomes": 140,
+        "frames": 45785,
+        "early_misses": 11,
+        "late_misses": 2,
+        "early_hit_rate": 0.725,
+        "late_hit_rate": 0.95,
+        "motor_updates": 10118
+      },
+      {
+        "seed": 41194,
+        "mode": "full_sensor",
+        "coach_style": "spinner",
+        "outcomes": 140,
+        "frames": 46521,
+        "early_misses": 20,
+        "late_misses": 8,
+        "early_hit_rate": 0.5,
+        "late_hit_rate": 0.8,
+        "motor_updates": 10353
+      },
+      {
+        "seed": 41291,
+        "mode": "full_sensor",
+        "coach_style": "center",
+        "outcomes": 140,
+        "frames": 42198,
+        "early_misses": 14,
+        "late_misses": 4,
+        "early_hit_rate": 0.65,
+        "late_hit_rate": 0.9,
+        "motor_updates": 10292
+      },
+      {
+        "seed": 41388,
+        "mode": "full_sensor",
+        "coach_style": "alternator",
+        "outcomes": 140,
+        "frames": 47082,
+        "early_misses": 11,
+        "late_misses": 4,
+        "early_hit_rate": 0.725,
+        "late_hit_rate": 0.9,
+        "motor_updates": 10481
+      },
+      {
+        "seed": 41485,
+        "mode": "full_sensor",
+        "coach_style": "mixed",
+        "outcomes": 140,
+        "frames": 43873,
+        "early_misses": 18,
+        "late_misses": 4,
+        "early_hit_rate": 0.55,
+        "late_hit_rate": 0.9,
+        "motor_updates": 9915
+      },
+      {
+        "seed": 41582,
+        "mode": "full_sensor",
+        "coach_style": "bottom_bias",
+        "outcomes": 140,
+        "frames": 42151,
+        "early_misses": 22,
+        "late_misses": 3,
+        "early_hit_rate": 0.45,
+        "late_hit_rate": 0.925,
+        "motor_updates": 9954
+      },
+      {
+        "seed": 41679,
+        "mode": "full_sensor",
+        "coach_style": "bottom_bias",
+        "outcomes": 140,
+        "frames": 44555,
+        "early_misses": 14,
+        "late_misses": 3,
+        "early_hit_rate": 0.65,
+        "late_hit_rate": 0.925,
+        "motor_updates": 10148
+      }
+    ],
+    "no_vertical_velocity": [
+      {
+        "seed": 41000,
+        "mode": "no_vertical_velocity",
+        "coach_style": "top_bias",
+        "outcomes": 140,
+        "frames": 45495,
+        "early_misses": 10,
+        "late_misses": 3,
+        "early_hit_rate": 0.75,
+        "late_hit_rate": 0.925,
+        "motor_updates": 10762
+      },
+      {
+        "seed": 41097,
+        "mode": "no_vertical_velocity",
+        "coach_style": "spinner",
+        "outcomes": 140,
+        "frames": 47345,
+        "early_misses": 9,
+        "late_misses": 1,
+        "early_hit_rate": 0.775,
+        "late_hit_rate": 0.975,
+        "motor_updates": 10563
+      },
+      {
+        "seed": 41194,
+        "mode": "no_vertical_velocity",
+        "coach_style": "spinner",
+        "outcomes": 140,
+        "frames": 44513,
+        "early_misses": 12,
+        "late_misses": 1,
+        "early_hit_rate": 0.7,
+        "late_hit_rate": 0.975,
+        "motor_updates": 10413
+      },
+      {
+        "seed": 41291,
+        "mode": "no_vertical_velocity",
+        "coach_style": "center",
+        "outcomes": 140,
+        "frames": 43657,
+        "early_misses": 11,
+        "late_misses": 7,
+        "early_hit_rate": 0.725,
+        "late_hit_rate": 0.825,
+        "motor_updates": 10635
+      },
+      {
+        "seed": 41388,
+        "mode": "no_vertical_velocity",
+        "coach_style": "alternator",
+        "outcomes": 140,
+        "frames": 48702,
+        "early_misses": 12,
+        "late_misses": 0,
+        "early_hit_rate": 0.7,
+        "late_hit_rate": 1.0,
+        "motor_updates": 10330
+      },
+      {
+        "seed": 41485,
+        "mode": "no_vertical_velocity",
+        "coach_style": "mixed",
+        "outcomes": 140,
+        "frames": 45244,
+        "early_misses": 12,
+        "late_misses": 5,
+        "early_hit_rate": 0.7,
+        "late_hit_rate": 0.875,
+        "motor_updates": 10088
+      },
+      {
+        "seed": 41582,
+        "mode": "no_vertical_velocity",
+        "coach_style": "bottom_bias",
+        "outcomes": 140,
+        "frames": 44084,
+        "early_misses": 17,
+        "late_misses": 5,
+        "early_hit_rate": 0.575,
+        "late_hit_rate": 0.875,
+        "motor_updates": 9814
+      },
+      {
+        "seed": 41679,
+        "mode": "no_vertical_velocity",
+        "coach_style": "bottom_bias",
+        "outcomes": 140,
+        "frames": 46782,
+        "early_misses": 8,
+        "late_misses": 3,
+        "early_hit_rate": 0.8,
+        "late_hit_rate": 0.925,
+        "motor_updates": 10356
+      }
+    ]
+  }
+}

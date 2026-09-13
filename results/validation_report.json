@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "gates": {
+    "source_audit": true,
+    "fresh_learning": true,
+    "pretrained_interception": true,
+    "smooth_motor": true,
+    "goal_conditioned_contact": true,
+    "strategy_change": true,
+    "checkpoint_roundtrip": true
+  },
+  "source_audit": {
+    "bad_solver_functions": [],
+    "future_target_names": [],
+    "divisions_by_ball_vx": 0,
+    "neural_framework_imports": 0,
+    "pass": true,
+    "scope": "AST audit for analytical future-path solver signatures in sem_agent.py"
+  },
+  "fresh_motor_learning": {
+    "seeds": [
+      {
+        "seed": 130,
+        "coach_style": "bottom_bias",
+        "outcomes": 120,
+        "early_misses": 13,
+        "late_misses": 3,
+        "early_hit_rate": 0.5666666666666667,
+        "late_hit_rate": 0.9
+      },
+      {
+        "seed": 131,
+        "coach_style": "mixed",
+        "outcomes": 120,
+        "early_misses": 13,
+        "late_misses": 5,
+        "early_hit_rate": 0.5666666666666667,
+        "late_hit_rate": 0.8333333333333334
+      },
+      {
+        "seed": 132,
+        "coach_style": "alternator",
+        "outcomes": 120,
+        "early_misses": 16,
+        "late_misses": 4,
+        "early_hit_rate": 0.4666666666666667,
+        "late_hit_rate": 0.8666666666666667
+      },
+      {
+        "seed": 133,
+        "coach_style": "center",
+        "outcomes": 120,
+        "early_misses": 12,
+        "late_misses": 3,
+        "early_hit_rate": 0.6,
+        "late_hit_rate": 0.9
+      }
+    ],
+    "mean_early_misses": 13.5,
+    "mean_late_misses": 3.75,
+    "miss_reduction_fraction": 0.7222222222222222
+  },
+  "pretrained_evaluation": {
+    "rows": [
+      {
+        "seed": 51000,
+        "coach_style": "center",
+        "hits": 56,
+        "misses": 4,
+        "hit_rate": 0.9333333333333333,
+        "sign_flips_per_1000_incoming_frames": 27.5998780115889
+      },
+      {
+        "seed": 51101,
+        "coach_style": "spinner",
+        "hits": 59,
+        "misses": 1,
+        "hit_rate": 0.9833333333333333,
+        "sign_flips_per_1000_incoming_frames": 27.90643816581751
+      },
+      {
+        "seed": 51202,
+        "coach_style": "top_bias",
+        "hits": 60,
+        "misses": 0,
+        "hit_rate": 1.0,
+        "sign_flips_per_1000_incoming_frames": 23.773802654356608
+      },
+      {
+        "seed": 51303,
+        "coach_style": "bottom_bias",
+        "hits": 60,
+        "misses": 0,
+        "hit_rate": 1.0,
+        "sign_flips_per_1000_incoming_frames": 20.54622901528439
+      }
+    ],
+    "mean_hit_rate": 0.9791666666666666,
+    "mean_sign_flips_per_1000_incoming_frames": 24.95658696176185
+  },
+  "contact_control": {
+    "pairs": 174,
+    "hit_rate": 0.9666666666666667,
+    "mean_absolute_contact_error": 0.4304786548781812,
+    "intent_actual_correlation": 0.3995526817582091
+  },
+  "strategy_change_test": {
+    "phase_a_target": 0.66,
+    "phase_a_best": 0.44,
+    "phase_b_target": -0.66,
+    "phase_b_best": -0.44,
+    "phase_a_correct": true,
+    "phase_b_correct": true
+  },
+  "checkpoint_roundtrip": {
+    "pass": true
+  },
+  "claim_boundary": [
+    "No analytical future ball-path solver is used by SEM.",
+    "Current-frame state variables, feature bins, sparse rewards, action vocabulary, actuator smoothing and incoming-direction gating are engineered.",
+    "The training opponents are engineered curriculum generators and are not part of SEM.",
+    "Motor interception, goal-conditioned contact control and opponent-response values are learned from experience."
+  ]
+}

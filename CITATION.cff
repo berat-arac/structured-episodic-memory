@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "Structured Episodic Memory (SEM)"
+message: "If you use this code or the accompanying experiments, please cite the SEM technical report and the versioned archive."
+type: software
+authors:
+  - family-names: "Araç"
+    given-names: "Berat D."
+version: 1.0.0
+date-released: 2026-09-13
+repository-code: "https://GITHUB-URL"
+abstract: >-
+  A non-neural associative-memory Pong agent that learns sparse-feedback motor
+  control, goal-conditioned contact behavior, context-sensitive strategy,
+  and online adaptation without an analytical future-trajectory solver.

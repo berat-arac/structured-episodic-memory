@@ -1,0 +1,239 @@
+{
+  "status": "SEM_MOTOR_TRACE_ABLATION_COMPLETE",
+  "protocol": {
+    "paired_seeds": true,
+    "outcomes_per_seed": 140,
+    "seeds": 8,
+    "intent_mode": "neutral",
+    "aim_weight": 0.0,
+    "full_trace": "original bounded decaying motor-decision eligibility trace",
+    "last_only": "trace cleared before every motor decision; only the final decision before sparse hit/miss receives credit",
+    "dense_frame_reward": false
+  },
+  "aggregate": {
+    "full_trace": {
+      "mean_early_misses": 13.75,
+      "mean_late_misses": 5.25,
+      "miss_reduction_fraction": 0.6181818181818182,
+      "mean_early_hit_rate": 0.65625,
+      "mean_late_hit_rate": 0.86875,
+      "improved_seeds": 8,
+      "equal_seeds": 0,
+      "worse_seeds": 0
+    },
+    "last_only": {
+      "mean_early_misses": 25.375,
+      "mean_late_misses": 12.125,
+      "miss_reduction_fraction": 0.5221674876847291,
+      "mean_early_hit_rate": 0.36562500000000003,
+      "mean_late_hit_rate": 0.696875,
+      "improved_seeds": 8,
+      "equal_seeds": 0,
+      "worse_seeds": 0
+    }
+  },
+  "paired": {
+    "mean_late_miss_advantage_last_only_minus_full": 6.875,
+    "full_better_late_seeds": 7,
+    "ties_late_seeds": 0,
+    "last_only_better_late_seeds": 1
+  },
+  "runs": {
+    "full_trace": [
+      {
+        "seed": 31000,
+        "mode": "full_trace",
+        "coach_style": "spinner",
+        "outcomes": 140,
+        "frames": 45834,
+        "early_misses": 12,
+        "late_misses": 5,
+        "early_hit_rate": 0.7,
+        "late_hit_rate": 0.875,
+        "motor_updates": 10219
+      },
+      {
+        "seed": 31097,
+        "mode": "full_trace",
+        "coach_style": "spinner",
+        "outcomes": 140,
+        "frames": 47272,
+        "early_misses": 14,
+        "late_misses": 7,
+        "early_hit_rate": 0.65,
+        "late_hit_rate": 0.825,
+        "motor_updates": 10292
+      },
+      {
+        "seed": 31194,
+        "mode": "full_trace",
+        "coach_style": "center",
+        "outcomes": 140,
+        "frames": 39993,
+        "early_misses": 15,
+        "late_misses": 4,
+        "early_hit_rate": 0.625,
+        "late_hit_rate": 0.9,
+        "motor_updates": 10217
+      },
+      {
+        "seed": 31291,
+        "mode": "full_trace",
+        "coach_style": "alternator",
+        "outcomes": 140,
+        "frames": 41968,
+        "early_misses": 18,
+        "late_misses": 3,
+        "early_hit_rate": 0.55,
+        "late_hit_rate": 0.925,
+        "motor_updates": 9894
+      },
+      {
+        "seed": 31388,
+        "mode": "full_trace",
+        "coach_style": "mixed",
+        "outcomes": 140,
+        "frames": 49389,
+        "early_misses": 13,
+        "late_misses": 8,
+        "early_hit_rate": 0.675,
+        "late_hit_rate": 0.8,
+        "motor_updates": 9859
+      },
+      {
+        "seed": 31485,
+        "mode": "full_trace",
+        "coach_style": "bottom_bias",
+        "outcomes": 140,
+        "frames": 45324,
+        "early_misses": 11,
+        "late_misses": 4,
+        "early_hit_rate": 0.725,
+        "late_hit_rate": 0.9,
+        "motor_updates": 10656
+      },
+      {
+        "seed": 31582,
+        "mode": "full_trace",
+        "coach_style": "bottom_bias",
+        "outcomes": 140,
+        "frames": 46948,
+        "early_misses": 15,
+        "late_misses": 6,
+        "early_hit_rate": 0.625,
+        "late_hit_rate": 0.85,
+        "motor_updates": 10377
+      },
+      {
+        "seed": 31679,
+        "mode": "full_trace",
+        "coach_style": "top_bias",
+        "outcomes": 140,
+        "frames": 41935,
+        "early_misses": 12,
+        "late_misses": 5,
+        "early_hit_rate": 0.7,
+        "late_hit_rate": 0.875,
+        "motor_updates": 10309
+      }
+    ],
+    "last_only": [
+      {
+        "seed": 31000,
+        "mode": "last_only",
+        "coach_style": "spinner",
+        "outcomes": 140,
+        "frames": 39777,
+        "early_misses": 23,
+        "late_misses": 11,
+        "early_hit_rate": 0.425,
+        "late_hit_rate": 0.725,
+        "motor_updates": 700
+      },
+      {
+        "seed": 31097,
+        "mode": "last_only",
+        "coach_style": "spinner",
+        "outcomes": 140,
+        "frames": 34488,
+        "early_misses": 31,
+        "late_misses": 17,
+        "early_hit_rate": 0.225,
+        "late_hit_rate": 0.575,
+        "motor_updates": 700
+      },
+      {
+        "seed": 31194,
+        "mode": "last_only",
+        "coach_style": "center",
+        "outcomes": 140,
+        "frames": 34701,
+        "early_misses": 25,
+        "late_misses": 13,
+        "early_hit_rate": 0.375,
+        "late_hit_rate": 0.675,
+        "motor_updates": 700
+      },
+      {
+        "seed": 31291,
+        "mode": "last_only",
+        "coach_style": "alternator",
+        "outcomes": 140,
+        "frames": 39171,
+        "early_misses": 24,
+        "late_misses": 19,
+        "early_hit_rate": 0.4,
+        "late_hit_rate": 0.525,
+        "motor_updates": 700
+      },
+      {
+        "seed": 31388,
+        "mode": "last_only",
+        "coach_style": "mixed",
+        "outcomes": 140,
+        "frames": 39308,
+        "early_misses": 28,
+        "late_misses": 2,
+        "early_hit_rate": 0.3,
+        "late_hit_rate": 0.95,
+        "motor_updates": 700
+      },
+      {
+        "seed": 31485,
+        "mode": "last_only",
+        "coach_style": "bottom_bias",
+        "outcomes": 140,
+        "frames": 42414,
+        "early_misses": 24,
+        "late_misses": 8,
+        "early_hit_rate": 0.4,
+        "late_hit_rate": 0.8,
+        "motor_updates": 700
+      },
+      {
+        "seed": 31582,
+        "mode": "last_only",
+        "coach_style": "bottom_bias",
+        "outcomes": 140,
+        "frames": 39856,
+        "early_misses": 24,
+        "late_misses": 15,
+        "early_hit_rate": 0.4,
+        "late_hit_rate": 0.625,
+        "motor_updates": 700
+      },
+      {
+        "seed": 31679,
+        "mode": "last_only",
+        "coach_style": "top_bias",
+        "outcomes": 140,
+        "frames": 39634,
+        "early_misses": 24,
+        "late_misses": 12,
+        "early_hit_rate": 0.4,
+        "late_hit_rate": 0.7,
+        "motor_updates": 700
+      }
+    ]
+  }
+}

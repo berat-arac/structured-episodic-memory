@@ -1,0 +1,215 @@
+{
+  "status": "SEM_DIRECTION_AMBIGUITY_BENCHMARK_COMPLETE",
+  "protocol": {
+    "paired_seeds": true,
+    "seeds": 8,
+    "episodes": 320,
+    "initial_geometry": "same x/y/paddle geometry, ball_vy sign randomized \u00b1700, vx=650, close to SEM paddle",
+    "aim_weight": 0.0,
+    "reward": "sparse hit/miss only",
+    "full_sensor": "original state",
+    "no_vertical_velocity": "vertical velocity bins neutralized",
+    "note": "Designed so the first motor decision occurs before position alone reveals the trajectory direction."
+  },
+  "aggregate": {
+    "full_sensor": {
+      "mean_early_hit_rate": 0.775,
+      "mean_late_hit_rate": 0.9625,
+      "mean_late_misses": 3,
+      "mean_late_first_action_direction_accuracy": 0.953125
+    },
+    "no_vertical_velocity": {
+      "mean_early_hit_rate": 0.4859375,
+      "mean_late_hit_rate": 0.59375,
+      "mean_late_misses": 32.5,
+      "mean_late_first_action_direction_accuracy": 0.3390625
+    }
+  },
+  "paired": {
+    "late_hit_rate_advantage_full_minus_no_vy": 0.36875,
+    "first_action_direction_advantage_full_minus_no_vy": 0.6140625,
+    "full_better_hit_seeds": 8
+  },
+  "runs": {
+    "full_sensor": [
+      {
+        "seed": 51000,
+        "mode": "full_sensor",
+        "episodes": 320,
+        "early_hit_rate": 0.7375,
+        "late_hit_rate": 0.9875,
+        "early_misses": 21,
+        "late_misses": 1,
+        "late_first_action_direction_accuracy": 0.975,
+        "frames": 2586
+      },
+      {
+        "seed": 51097,
+        "mode": "full_sensor",
+        "episodes": 320,
+        "early_hit_rate": 0.8125,
+        "late_hit_rate": 0.975,
+        "early_misses": 15,
+        "late_misses": 2,
+        "late_first_action_direction_accuracy": 0.9625,
+        "frames": 2543
+      },
+      {
+        "seed": 51194,
+        "mode": "full_sensor",
+        "episodes": 320,
+        "early_hit_rate": 0.7625,
+        "late_hit_rate": 0.9375,
+        "early_misses": 19,
+        "late_misses": 5,
+        "late_first_action_direction_accuracy": 0.9375,
+        "frames": 2659
+      },
+      {
+        "seed": 51291,
+        "mode": "full_sensor",
+        "episodes": 320,
+        "early_hit_rate": 0.75,
+        "late_hit_rate": 0.9625,
+        "early_misses": 20,
+        "late_misses": 3,
+        "late_first_action_direction_accuracy": 0.9625,
+        "frames": 2613
+      },
+      {
+        "seed": 51388,
+        "mode": "full_sensor",
+        "episodes": 320,
+        "early_hit_rate": 0.725,
+        "late_hit_rate": 0.975,
+        "early_misses": 22,
+        "late_misses": 2,
+        "late_first_action_direction_accuracy": 0.9375,
+        "frames": 2655
+      },
+      {
+        "seed": 51485,
+        "mode": "full_sensor",
+        "episodes": 320,
+        "early_hit_rate": 0.7875,
+        "late_hit_rate": 0.975,
+        "early_misses": 17,
+        "late_misses": 2,
+        "late_first_action_direction_accuracy": 0.9625,
+        "frames": 2568
+      },
+      {
+        "seed": 51582,
+        "mode": "full_sensor",
+        "episodes": 320,
+        "early_hit_rate": 0.825,
+        "late_hit_rate": 0.95,
+        "early_misses": 14,
+        "late_misses": 4,
+        "late_first_action_direction_accuracy": 0.95,
+        "frames": 2660
+      },
+      {
+        "seed": 51679,
+        "mode": "full_sensor",
+        "episodes": 320,
+        "early_hit_rate": 0.8,
+        "late_hit_rate": 0.9375,
+        "early_misses": 16,
+        "late_misses": 5,
+        "late_first_action_direction_accuracy": 0.9375,
+        "frames": 2525
+      }
+    ],
+    "no_vertical_velocity": [
+      {
+        "seed": 51000,
+        "mode": "no_vertical_velocity",
+        "episodes": 320,
+        "early_hit_rate": 0.4625,
+        "late_hit_rate": 0.9,
+        "early_misses": 43,
+        "late_misses": 8,
+        "late_first_action_direction_accuracy": 0.0125,
+        "frames": 4302
+      },
+      {
+        "seed": 51097,
+        "mode": "no_vertical_velocity",
+        "episodes": 320,
+        "early_hit_rate": 0.4375,
+        "late_hit_rate": 0.5625,
+        "early_misses": 45,
+        "late_misses": 35,
+        "late_first_action_direction_accuracy": 0.525,
+        "frames": 3926
+      },
+      {
+        "seed": 51194,
+        "mode": "no_vertical_velocity",
+        "episodes": 320,
+        "early_hit_rate": 0.475,
+        "late_hit_rate": 0.4625,
+        "early_misses": 42,
+        "late_misses": 43,
+        "late_first_action_direction_accuracy": 0.5,
+        "frames": 3976
+      },
+      {
+        "seed": 51291,
+        "mode": "no_vertical_velocity",
+        "episodes": 320,
+        "early_hit_rate": 0.5375,
+        "late_hit_rate": 0.3625,
+        "early_misses": 37,
+        "late_misses": 51,
+        "late_first_action_direction_accuracy": 0.3875,
+        "frames": 4070
+      },
+      {
+        "seed": 51388,
+        "mode": "no_vertical_velocity",
+        "episodes": 320,
+        "early_hit_rate": 0.4,
+        "late_hit_rate": 0.7875,
+        "early_misses": 48,
+        "late_misses": 17,
+        "late_first_action_direction_accuracy": 0.125,
+        "frames": 4096
+      },
+      {
+        "seed": 51485,
+        "mode": "no_vertical_velocity",
+        "episodes": 320,
+        "early_hit_rate": 0.575,
+        "late_hit_rate": 0.725,
+        "early_misses": 34,
+        "late_misses": 22,
+        "late_first_action_direction_accuracy": 0.325,
+        "frames": 4165
+      },
+      {
+        "seed": 51582,
+        "mode": "no_vertical_velocity",
+        "episodes": 320,
+        "early_hit_rate": 0.5875,
+        "late_hit_rate": 0.45,
+        "early_misses": 33,
+        "late_misses": 44,
+        "late_first_action_direction_accuracy": 0.475,
+        "frames": 4214
+      },
+      {
+        "seed": 51679,
+        "mode": "no_vertical_velocity",
+        "episodes": 320,
+        "early_hit_rate": 0.4125,
+        "late_hit_rate": 0.5,
+        "early_misses": 47,
+        "late_misses": 40,
+        "late_first_action_direction_accuracy": 0.3625,
+        "frames": 4050
+      }
+    ]
+  }
+}

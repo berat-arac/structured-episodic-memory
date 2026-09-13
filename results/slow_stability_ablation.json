@@ -1,0 +1,222 @@
+{
+  "status": "SEM_SLOW_MEMORY_STABILITY_ABLATION_COMPLETE",
+  "protocol": {
+    "seeds": 8,
+    "train_A": 100,
+    "temporary_B_shock": 10,
+    "recovery_A": 50,
+    "switch_signal_exposed": false,
+    "memory_reset": false,
+    "full": "fast+slow",
+    "fast_only": "slow ignored in action choice"
+  },
+  "aggregate": {
+    "full": {
+      "train_last20_up_intent": 0.9312499999999999,
+      "shock_down_intent_fraction": 0.225,
+      "shock_up_retention_fraction": 0.75,
+      "recovery_first20_up_intent_fraction": 0.73125,
+      "recovery_last20_up_intent_fraction": 0.9,
+      "recovery_mean_reward": 0.5238958210461078,
+      "shock_mean_reward": 0.5195374645760558
+    },
+    "fast_only": {
+      "train_last20_up_intent": 0.975,
+      "shock_down_intent_fraction": 0.1,
+      "shock_up_retention_fraction": 0.8875,
+      "recovery_first20_up_intent_fraction": 0.74375,
+      "recovery_last20_up_intent_fraction": 0.84375,
+      "recovery_mean_reward": 0.48544513908853626,
+      "shock_mean_reward": 0.3556551835830293
+    }
+  },
+  "paired": {
+    "shock_flip_reduction_full_vs_fast_only": -0.125,
+    "recovery_first20_advantage_full_minus_fast_only": -0.012500000000000004,
+    "recovery_last20_advantage_full_minus_fast_only": 0.056249999999999974,
+    "full_better_recovery_first20_count": 4,
+    "fast_only_better_recovery_first20_count": 4
+  },
+  "runs": {
+    "full": [
+      {
+        "seed": 20260913,
+        "mode": "full",
+        "train_last20_up_intent": 0.85,
+        "shock_down_intent_fraction": 0.2,
+        "shock_up_retention_fraction": 0.7,
+        "recovery_first20_up_intent_fraction": 0.85,
+        "recovery_last20_up_intent_fraction": 0.7,
+        "recovery_mean_reward": 0.5046684555139527,
+        "shock_mean_reward": 0.44772654434781267
+      },
+      {
+        "seed": 20261922,
+        "mode": "full",
+        "train_last20_up_intent": 1,
+        "shock_down_intent_fraction": 0.3,
+        "shock_up_retention_fraction": 0.7,
+        "recovery_first20_up_intent_fraction": 0.35,
+        "recovery_last20_up_intent_fraction": 0.95,
+        "recovery_mean_reward": 0.4508917045955273,
+        "shock_mean_reward": 0.6278057721124952
+      },
+      {
+        "seed": 20262931,
+        "mode": "full",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0.5,
+        "shock_up_retention_fraction": 0.5,
+        "recovery_first20_up_intent_fraction": 0.75,
+        "recovery_last20_up_intent_fraction": 1,
+        "recovery_mean_reward": 0.5432988213888593,
+        "shock_mean_reward": 0.5249677949256896
+      },
+      {
+        "seed": 20263940,
+        "mode": "full",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0.2,
+        "shock_up_retention_fraction": 0.8,
+        "recovery_first20_up_intent_fraction": 0.75,
+        "recovery_last20_up_intent_fraction": 0.95,
+        "recovery_mean_reward": 0.5278210264468312,
+        "shock_mean_reward": 0.6080410667701968
+      },
+      {
+        "seed": 20264949,
+        "mode": "full",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0.3,
+        "shock_up_retention_fraction": 0.7,
+        "recovery_first20_up_intent_fraction": 0.75,
+        "recovery_last20_up_intent_fraction": 0.85,
+        "recovery_mean_reward": 0.5610809905698557,
+        "shock_mean_reward": 0.3865325398478879
+      },
+      {
+        "seed": 20265958,
+        "mode": "full",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0,
+        "shock_up_retention_fraction": 1,
+        "recovery_first20_up_intent_fraction": 0.9,
+        "recovery_last20_up_intent_fraction": 0.9,
+        "recovery_mean_reward": 0.5907316144253735,
+        "shock_mean_reward": 0.45165357111177157
+      },
+      {
+        "seed": 20266967,
+        "mode": "full",
+        "train_last20_up_intent": 0.85,
+        "shock_down_intent_fraction": 0.2,
+        "shock_up_retention_fraction": 0.7,
+        "recovery_first20_up_intent_fraction": 0.75,
+        "recovery_last20_up_intent_fraction": 0.9,
+        "recovery_mean_reward": 0.568830897254089,
+        "shock_mean_reward": 0.578628161542304
+      },
+      {
+        "seed": 20267976,
+        "mode": "full",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0.1,
+        "shock_up_retention_fraction": 0.9,
+        "recovery_first20_up_intent_fraction": 0.75,
+        "recovery_last20_up_intent_fraction": 0.95,
+        "recovery_mean_reward": 0.4438430581743739,
+        "shock_mean_reward": 0.5309442659502883
+      }
+    ],
+    "fast_only": [
+      {
+        "seed": 20260913,
+        "mode": "fast_only",
+        "train_last20_up_intent": 1,
+        "shock_down_intent_fraction": 0,
+        "shock_up_retention_fraction": 1,
+        "recovery_first20_up_intent_fraction": 0.95,
+        "recovery_last20_up_intent_fraction": 0.9,
+        "recovery_mean_reward": 0.45101994009399976,
+        "shock_mean_reward": 0.2978046814947778
+      },
+      {
+        "seed": 20261922,
+        "mode": "fast_only",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0,
+        "shock_up_retention_fraction": 1,
+        "recovery_first20_up_intent_fraction": 0.9,
+        "recovery_last20_up_intent_fraction": 0.9,
+        "recovery_mean_reward": 0.44472689726094067,
+        "shock_mean_reward": 0.29732265521253964
+      },
+      {
+        "seed": 20262931,
+        "mode": "fast_only",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0,
+        "shock_up_retention_fraction": 1,
+        "recovery_first20_up_intent_fraction": 0.9,
+        "recovery_last20_up_intent_fraction": 0.95,
+        "recovery_mean_reward": 0.5539078403831759,
+        "shock_mean_reward": 0.40764623192849975
+      },
+      {
+        "seed": 20263940,
+        "mode": "fast_only",
+        "train_last20_up_intent": 1,
+        "shock_down_intent_fraction": 0.3,
+        "shock_up_retention_fraction": 0.7,
+        "recovery_first20_up_intent_fraction": 0.65,
+        "recovery_last20_up_intent_fraction": 0.45,
+        "recovery_mean_reward": 0.375930314416982,
+        "shock_mean_reward": 0.3150552739075168
+      },
+      {
+        "seed": 20264949,
+        "mode": "fast_only",
+        "train_last20_up_intent": 1,
+        "shock_down_intent_fraction": 0.2,
+        "shock_up_retention_fraction": 0.8,
+        "recovery_first20_up_intent_fraction": 0.35,
+        "recovery_last20_up_intent_fraction": 0.95,
+        "recovery_mean_reward": 0.44071026628391113,
+        "shock_mean_reward": 0.35189152687367015
+      },
+      {
+        "seed": 20265958,
+        "mode": "fast_only",
+        "train_last20_up_intent": 1,
+        "shock_down_intent_fraction": 0.1,
+        "shock_up_retention_fraction": 0.9,
+        "recovery_first20_up_intent_fraction": 0.85,
+        "recovery_last20_up_intent_fraction": 1,
+        "recovery_mean_reward": 0.6226547034021205,
+        "shock_mean_reward": 0.296340725831626
+      },
+      {
+        "seed": 20266967,
+        "mode": "fast_only",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0,
+        "shock_up_retention_fraction": 1,
+        "recovery_first20_up_intent_fraction": 0.45,
+        "recovery_last20_up_intent_fraction": 0.8,
+        "recovery_mean_reward": 0.46577879205301503,
+        "shock_mean_reward": 0.5771007151644065
+      },
+      {
+        "seed": 20267976,
+        "mode": "fast_only",
+        "train_last20_up_intent": 0.95,
+        "shock_down_intent_fraction": 0.2,
+        "shock_up_retention_fraction": 0.7,
+        "recovery_first20_up_intent_fraction": 0.9,
+        "recovery_last20_up_intent_fraction": 0.8,
+        "recovery_mean_reward": 0.5288323588141451,
+        "shock_mean_reward": 0.30207965825119737
+      }
+    ]
+  }
+}

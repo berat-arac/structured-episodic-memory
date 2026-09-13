@@ -1,0 +1,197 @@
+{
+  "status": "SEM_AIM_ABLATION_COMPLETE",
+  "protocol": {
+    "paired_seeds": true,
+    "seeds": 8,
+    "outcomes_per_seed": 100,
+    "intent_mode": "random",
+    "eval_mode": true,
+    "full": "pretrained aim residual active",
+    "no_aim": "same checkpoint and random intents, but aim_weight=0 so intent cannot affect motor action selection"
+  },
+  "aggregate": {
+    "full": {
+      "mean_correlation": 0.3945941859087956,
+      "mean_mae": 0.42112120172469647,
+      "mean_hit_rate": 0.96375,
+      "mean_pairs": 96.375
+    },
+    "no_aim": {
+      "mean_correlation": -0.01984667433631614,
+      "mean_mae": 0.5963790776704001,
+      "mean_hit_rate": 0.98625,
+      "mean_pairs": 98.625
+    }
+  },
+  "paired": {
+    "mean_correlation_advantage_full_minus_noaim": 0.41444086024511173,
+    "mean_mae_improvement_noaim_minus_full": 0.1752578759457036,
+    "full_higher_correlation_seeds": 8
+  },
+  "runs": {
+    "full": [
+      {
+        "seed": 62000,
+        "mode": "full",
+        "pairs": 96,
+        "hits": 96,
+        "misses": 4,
+        "hit_rate": 0.96,
+        "mae": 0.41851779757037894,
+        "correlation": 0.4656387418076317
+      },
+      {
+        "seed": 62137,
+        "mode": "full",
+        "pairs": 96,
+        "hits": 96,
+        "misses": 4,
+        "hit_rate": 0.96,
+        "mae": 0.4356796653802207,
+        "correlation": 0.29263690200085135
+      },
+      {
+        "seed": 62274,
+        "mode": "full",
+        "pairs": 96,
+        "hits": 96,
+        "misses": 4,
+        "hit_rate": 0.96,
+        "mae": 0.4363525147990103,
+        "correlation": 0.3755818296078717
+      },
+      {
+        "seed": 62411,
+        "mode": "full",
+        "pairs": 96,
+        "hits": 96,
+        "misses": 4,
+        "hit_rate": 0.96,
+        "mae": 0.4202806551567882,
+        "correlation": 0.26326468258536495
+      },
+      {
+        "seed": 62548,
+        "mode": "full",
+        "pairs": 95,
+        "hits": 95,
+        "misses": 5,
+        "hit_rate": 0.95,
+        "mae": 0.4143279095029224,
+        "correlation": 0.3769863170635201
+      },
+      {
+        "seed": 62685,
+        "mode": "full",
+        "pairs": 97,
+        "hits": 97,
+        "misses": 3,
+        "hit_rate": 0.97,
+        "mae": 0.4108166158253929,
+        "correlation": 0.44377633594339366
+      },
+      {
+        "seed": 62822,
+        "mode": "full",
+        "pairs": 97,
+        "hits": 97,
+        "misses": 3,
+        "hit_rate": 0.97,
+        "mae": 0.3898600250819318,
+        "correlation": 0.4952851035450916
+      },
+      {
+        "seed": 62959,
+        "mode": "full",
+        "pairs": 98,
+        "hits": 98,
+        "misses": 2,
+        "hit_rate": 0.98,
+        "mae": 0.44313443048092654,
+        "correlation": 0.44358357471663956
+      }
+    ],
+    "no_aim": [
+      {
+        "seed": 62000,
+        "mode": "no_aim",
+        "pairs": 100,
+        "hits": 100,
+        "misses": 0,
+        "hit_rate": 1.0,
+        "mae": 0.531179370156319,
+        "correlation": 0.05498664345145949
+      },
+      {
+        "seed": 62137,
+        "mode": "no_aim",
+        "pairs": 99,
+        "hits": 99,
+        "misses": 1,
+        "hit_rate": 0.99,
+        "mae": 0.6066789090463935,
+        "correlation": -0.002017649478981482
+      },
+      {
+        "seed": 62274,
+        "mode": "no_aim",
+        "pairs": 97,
+        "hits": 97,
+        "misses": 3,
+        "hit_rate": 0.97,
+        "mae": 0.5560661308580407,
+        "correlation": 0.04790148231692409
+      },
+      {
+        "seed": 62411,
+        "mode": "no_aim",
+        "pairs": 100,
+        "hits": 100,
+        "misses": 0,
+        "hit_rate": 1.0,
+        "mae": 0.5491428937155016,
+        "correlation": -0.010204932227062207
+      },
+      {
+        "seed": 62548,
+        "mode": "no_aim",
+        "pairs": 97,
+        "hits": 97,
+        "misses": 3,
+        "hit_rate": 0.97,
+        "mae": 0.6216516321856338,
+        "correlation": -0.061863664880894655
+      },
+      {
+        "seed": 62685,
+        "mode": "no_aim",
+        "pairs": 99,
+        "hits": 99,
+        "misses": 1,
+        "hit_rate": 0.99,
+        "mae": 0.614702692122154,
+        "correlation": -0.02711350160090381
+      },
+      {
+        "seed": 62822,
+        "mode": "no_aim",
+        "pairs": 100,
+        "hits": 100,
+        "misses": 0,
+        "hit_rate": 1.0,
+        "mae": 0.6221628388954751,
+        "correlation": -0.0075830462520040595
+      },
+      {
+        "seed": 62959,
+        "mode": "no_aim",
+        "pairs": 97,
+        "hits": 97,
+        "misses": 3,
+        "hit_rate": 0.97,
+        "mae": 0.669448154383683,
+        "correlation": -0.1528787260190665
+      }
+    ]
+  }
+}
