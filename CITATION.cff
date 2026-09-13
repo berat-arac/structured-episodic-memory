@@ -7,7 +7,7 @@ authors:
     given-names: "Berat D."
 version: 1.0.0
 date-released: 2026-09-13
-repository-code: "https://GITHUB-URL"
+repository-code: "https://github.com/berat-arac/structured-episodic-memory"
 abstract: >-
   A non-neural associative-memory Pong agent that learns sparse-feedback motor
   control, goal-conditioned contact behavior, context-sensitive strategy,
