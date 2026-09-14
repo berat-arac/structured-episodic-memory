@@ -110,6 +110,9 @@ Paper title: **Structured Episodic Memory (SEM)**
 
 The paper deliberately reports negative and mixed findings as well as successful ablations. In particular, ordinary Pong does not require the vertical-velocity sensor, and the current slow-memory blend is only weakly supported.
 
+## Read the article on Medium
+https://medium.com/@beratarac/can-an-agent-learn-without-a-neural-network-deb9515abe46?sharedUserId=beratarac
+
 ## Repository layout
 
 ```text
